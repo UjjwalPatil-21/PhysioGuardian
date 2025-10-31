@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhysioGuardian - Emergency Chat</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>PhysioGuardian</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about-us">About Us</a></li>
+                <li><a href="clinic-locator.html">Clinic Locator</a></li>
+                <li><a href="fee-predictor.html">Fee Predictor</a></li>
+                <li><a href="chat.html" class="active">Emergency Chat</a></li>
+            </ul>
+        </nav>
+        <div class="header-right">
+            <div id="auth-links" style="display: flex; align-items: center; gap: 1rem;"></div>
+            <div class="user-profile" style="display: none;"></div>
+            <button id="theme-toggle" aria-label="Toggle light and dark mode">
+                <i class="fas fa-sun sun-icon"></i>
+                <i class="fas fa-moon moon-icon"></i>
+            </button>
+        </div>
+    </header>
+    <main class="emergency-chat-main">
+        <div class="chat-container-wrapper">
+            <div id="emergency-chat-container" class="chat-container">
+                <div class="chat-header">
+                    <h3>AI Chat</h3>
+                </div>
+                <div id="emergency-chat-window" class="chat-window">
+                    <div class="chat-message bot-message">Hi! Ask me anything. I can help with general questions, explanations, and ideas.</div>
+                </div>
+                <div class="chat-input-area">
+                    <textarea id="emergency-user-input" rows="1" placeholder="Ask me anything..."></textarea>
+                    <button id="emergency-send-btn" class="send-btn"><i class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script src="script.js"></script>
+    <script src="main-auth.js" type="module"></script>
+    </body>
+</html>

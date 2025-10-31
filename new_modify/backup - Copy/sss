@@ -1,0 +1,1522 @@
+css
+
+/* Basic Reset & Font Imports */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Color Variables for Themes */
+:root {
+    /* Light Mode */
+    --background-color: #f0f2f5;
+    --card-background: #ffffff;
+    --text-color: #333;
+    --secondary-text-color: #555;
+    --border-color: #e0e0e0;
+    --primary-blue: #007bff;
+    --accent-green: #28a745;
+    --shadow-color: rgba(0, 0, 0, 0.08);
+    --header-bg: #ffffff;
+    --nav-link-hover: #f0f0f0;
+    --active-nav-link: #0056b3;
+    --input-bg: #f9f9f9;
+    --chat-bubble-bg: #007bff;
+    --chat-bubble-color: #fff;
+    --highlight-bg: #e0f7ff;
+}
+
+[data-theme="dark"] {
+    /* Dark Mode */
+    --background-color: #1a1a2e;
+    --card-background: #1e253e;
+    --text-color: #e0e0e0;
+    --secondary-text-color: #b0b0b0;
+    --border-color: #3a415a;
+    --primary-blue: #00bcd4;
+    --accent-green: #4caf50;
+    --shadow-color: rgba(0, 0, 0, 0.4);
+    --header-bg: #1e253e;
+    --nav-link-hover: #2a314e;
+    --active-nav-link: #00a4bd;
+    --input-bg: #29314c;
+    --chat-bubble-bg: #00bcd4;
+    --chat-bubble-color: #1a1a2e;
+    --highlight-bg: rgba(0, 188, 212, 0.1);
+}
+
+/* Header Styles */
+header {
+    background-color: var(--header-bg);
+    color: var(--text-color);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px var(--shadow-color);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--primary-blue);
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2.5rem;
+}
+
+header nav a {
+    color: var(--secondary-text-color);
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 0;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+header nav a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-blue);
+    transition: width 0.3s ease;
+}
+
+header nav a:hover::after,
+header nav a.active::after {
+    width: 100%;
+}
+
+header nav a:hover {
+    color: var(--text-color);
+}
+
+header nav a.active {
+    color: var(--primary-blue);
+    font-weight: 600;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.user-profile {
+    background-color: var(--primary-blue);
+    color: white;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 2px 5px var(--shadow-color);
+}
+
+/* Theme Toggle Button */
+#theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.3rem;
+    color: var(--secondary-text-color);
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+#theme-toggle:hover {
+    color: var(--primary-blue);
+    transform: scale(1.1);
+}
+
+#theme-toggle .sun-icon,
+#theme-toggle .moon-icon {
+    display: none;
+}
+
+[data-theme="light"] #theme-toggle .sun-icon {
+    display: block;
+}
+
+[data-theme="dark"] #theme-toggle .moon-icon {
+    display: block;
+}
+
+/* Home Page Styles */
+.home-main {
+    flex-direction: column;
+    padding-top: 80px;
+}
+
+.hero-section {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(45deg, var(--primary-blue), var(--active-nav-link), var(--background-color));
+    background-size: 400% 400%;
+    animation: gradient-animation 15s ease infinite;
+}
+
+@keyframes gradient-animation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.hero-content {
+    max-width: 800px;
+    padding: 2rem;
+    z-index: 10;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.hero-tagline {
+    font-size: 1.25rem;
+    color: var(--text-color);
+    margin-bottom: 2rem;
+}
+
+.hero-btn {
+    padding: 1rem 2.5rem;
+    font-size: 1.2rem;
+    width: auto;
+}
+
+.content-rows-section {
+    padding: 4rem 2rem;
+    background-color: var(--background-color);
+}
+
+.content-row-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-blue);
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.card-row {
+    display: flex;
+    overflow-x: auto;
+    gap: 1.5rem;
+    padding: 1rem 0;
+}
+
+.card-row .card {
+    min-width: 250px;
+    text-align: left;
+}
+
+.card-row .card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+.card-row .card h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 1rem;
+    text-align: center;
+}
+
+.how-it-works-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.how-it-works-item {
+    padding: 2rem;
+    background-color: var(--card-background);
+    border-radius: 8px;
+    box-shadow: 0 4px 15px var(--shadow-color);
+}
+
+.icon-circle {
+    width: 60px;
+    height: 60px;
+    background-color: var(--primary-blue);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 1rem;
+    font-size: 2rem;
+    color: white;
+}
+
+
+/* Main layout for Clinic Locator */
+.clinic-locator-main {
+    display: flex;
+    height: calc(100vh - 80px);
+    overflow: hidden;
+}
+
+#sidebar {
+    width: 450px;
+    padding: 2rem;
+    overflow-y: auto;
+    flex-shrink: 0;
+    box-shadow: var(--shadow-color) 4px 0 10px;
+    position: relative;
+    z-index: 100;
+    background-color: var(--card-background);
+}
+
+#map-container {
+    flex-grow: 1;
+    position: relative;
+    z-index: 50;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+}
+
+/* Common Card Styling */
+.card {
+    background-color: var(--card-background);
+    border-radius: 8px;
+    box-shadow: 0 4px 15px var(--shadow-color);
+}
+
+/* Titles and Taglines */
+.module-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+}
+
+.tagline {
+    font-size: 0.95rem;
+    color: var(--secondary-text-color);
+    margin-bottom: 1.5rem;
+}
+
+.list-title {
+    font-size: 1.3rem;
+    color: var(--text-color);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.info-message {
+    color: var(--secondary-text-color);
+    text-align: center;
+    margin-top: 1rem;
+    font-style: italic;
+}
+
+/* Buttons */
+.primary-btn {
+    background-color: var(--primary-blue);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-bottom: 1.5rem;
+    width: 100%;
+}
+
+.primary-btn:hover {
+    background-color: var(--active-nav-link);
+    transform: translateY(-2px);
+}
+
+/* Form Inputs */
+.text-input,
+.select-input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    background-color: var(--input-bg);
+    color: var(--text-color);
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.text-input::placeholder,
+.select-input option {
+    color: var(--secondary-text-color);
+}
+
+.text-input:focus,
+.select-input:focus {
+    outline: none;
+    border-color: var(--primary-blue);
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.2);
+}
+
+/* Physiotherapist List */
+#physio-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#physio-list li {
+    background-color: var(--input-bg);
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px var(--shadow-color);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.3s ease;
+    border: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+#physio-list li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px var(--shadow-color);
+    background-color: var(--nav-link-hover);
+}
+
+#physio-list li.highlight {
+    background-color: var(--highlight-bg);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px var(--shadow-color);
+}
+
+#physio-list li h3,
+#physio-list li.highlight h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: var(--primary-blue);
+    font-weight: 600;
+}
+#physio-list li.highlight h3,
+#physio-list li.highlight p,
+#physio-list li.highlight .specialty-tag,
+#physio-list li.highlight .links a,
+#physio-list li.highlight i {
+    color: var(--text-color);
+}
+
+#physio-list li p {
+    margin: 0;
+    color: var(--secondary-text-color);
+    font-size: 1rem;
+}
+
+#physio-list li .hospital-info,
+#physio-list li .address {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.specialties {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.specialty-tag {
+    background-color: rgba(0, 123, 255, 0.1);
+    color: var(--primary-blue);
+    padding: 0.3rem 0.7rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+#physio-list li.highlight .specialty-tag {
+    background-color: var(--primary-blue);
+    color: white;
+}
+
+.near-you {
+    font-weight: 600;
+    color: var(--accent-green);
+    animation: pulse 1.5s infinite;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.02); opacity: 0.9; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+.links {
+    display: flex;
+    gap: 0.8rem;
+    margin-top: 1rem;
+}
+
+.btn-link {
+    display: inline-block;
+    padding: 0.6rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border: 1px solid var(--primary-blue);
+    color: var(--primary-blue);
+    background-color: transparent;
+}
+
+.btn-link:hover {
+    background-color: var(--primary-blue);
+    color: white;
+}
+
+.btn-link.call-btn {
+    background-color: var(--accent-green);
+    border-color: var(--accent-green);
+    color: white;
+}
+
+.btn-link.call-btn:hover {
+    background-color: #3e8e41;
+    border-color: #3e8e41;
+}
+
+#physio-list li.highlight .btn-link {
+    border-color: var(--text-color);
+    color: var(--text-color);
+}
+
+#physio-list li.highlight .btn-link.call-btn {
+    background-color: var(--text-color);
+    color: var(--accent-green);
+}
+
+#physio-list li.highlight .btn-link.call-btn:hover {
+    background-color: #f0f0f0;
+}
+
+
+/* Fee Predictor Specific Styles */
+.fee-predictor-main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 4rem;
+    flex: 1;
+    overflow-y: auto;
+}
+
+.prediction-container {
+    width: 100%;
+    max-width: 500px;
+    padding: 2.5rem;
+    text-align: center;
+}
+
+.prediction-container .tagline {
+    font-size: 0.95rem;
+    color: var(--secondary-text-color);
+    margin-bottom: 2.5rem;
+}
+
+.prediction-form .form-group {
+    text-align: left;
+    margin-bottom: 1.5rem;
+}
+
+.prediction-form label {
+    display: block;
+    margin-bottom: 0.6rem;
+    font-weight: 600;
+    color: var(--text-color);
+    font-size: 0.95rem;
+}
+
+.prediction-form input,
+.prediction-form select {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    background-color: var(--input-bg);
+    color: var(--text-color);
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.prediction-form input::placeholder,
+.prediction-form select option {
+    color: var(--secondary-text-color);
+}
+
+.prediction-form input:focus,
+.prediction-form select:focus {
+    outline: none;
+    border-color: var(--primary-blue);
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.2);
+}
+
+.result-box {
+    margin-top: 3rem;
+    padding: 1.5rem;
+    background: var(--nav-link-hover);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--text-color);
+    display: none;
+}
+
+#predicted-fee {
+    color: var(--primary-blue);
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-left: 0.5rem;
+}
+
+/* Chat Module Styles */
+/* ... (all previous styles) ... */
+
+/* Chat Module Styles */
+/* ... (all previous styles) ... */
+
+/* ... (all previous styles) ... */
+
+/* Emergency Chat Specific Styles */
+.emergency-chat-main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+}
+
+.chat-container-wrapper {
+    width: 100%;
+    max-width: 800px;
+    height: calc(100vh - 160px);
+    background-color: var(--card-background);
+    border-radius: 10px;
+    box-shadow: 0 4px 20px var(--shadow-color);
+    display: flex;
+    flex-direction: column;
+}
+
+#emergency-chat-container {
+    position: static;
+    transform: none;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-header {
+    background-color: var(--primary-blue);
+    color: white;
+    padding: 1.5rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chat-header h3 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.chat-window {
+    flex: 1;
+    overflow-y: auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    background-color: var(--input-bg);
+}
+
+.chat-message {
+    padding: 1rem 1.5rem;
+    border-radius: 25px;
+    max-width: 75%;
+    word-wrap: break-word;
+    box-shadow: 0 2px 5px var(--shadow-color);
+}
+
+.user-message {
+    background-color: var(--primary-blue);
+    color: white;
+    align-self: flex-end;
+}
+
+.bot-message {
+    background-color: var(--border-color);
+    color: var(--text-color);
+    align-self: flex-start;
+}
+
+.chat-input-area {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border-top: 1px solid var(--border-color);
+    background-color: var(--card-background);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#emergency-user-input {
+    flex: 1;
+    border: 1px solid var(--border-color);
+    border-radius: 25px;
+    padding: 1rem;
+    min-height: 50px;
+    background-color: var(--input-bg);
+    color: var(--text-color);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    resize: none;
+    line-height: 1.5;
+}
+
+#emergency-user-input:focus {
+    outline: none;
+    border-color: var(--primary-blue);
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2);
+}
+
+.send-btn {
+    background: none;
+    border: none;
+    color: var(--primary-blue);
+    font-size: 2rem;
+    margin-left: 1rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.send-btn:hover {
+    color: var(--active-nav-link);
+}
+
+/* Assistant Module Styles (for other pages) */
+#assistant-container {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 1500;
+}
+
+
+/* User Marker (Traditional Red Pin) */
+
+
+.user-marker {
+    font-size: 28px;
+    color: #007bff;
+    background: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 12px rgba(0,123,255,0.6);
+}
+
+.user-radius {
+    stroke-dasharray: 6 6;
+    animation: pulse-radius 4s infinite;
+}
+
+@keyframes pulse-radius {
+    0% {
+        stroke-width: 2;
+        stroke-opacity: 0.9;
+        fill-opacity: 0.2;
+    }
+    50% {
+        stroke-width: 4;
+        stroke-opacity: 0.4;
+        fill-opacity: 0.35;
+    }
+    100% {
+        stroke-width: 2;
+        stroke-opacity: 0.9;
+        fill-opacity: 0.2;
+    }
+}
+
+
+
+/* Physiotherapist Hospital Marker */
+.physio-marker {
+    background-color: var(--primary-blue);
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    border: 3px solid var(--card-background);
+    box-shadow: 0 2px 5px var(--shadow-color);
+}
+
+/* Welcome Pop-up */
+.welcome-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3000;
+    transition: opacity 0.3s ease;
+}
+
+.welcome-content {
+    background-color: transparent;
+    color: var(--text-color);
+    padding: 0;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 650px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 0;
+}
+
+.welcome-image {
+    width: 250px;
+    height: auto;
+    object-fit: contain;
+    z-index: 10;
+    position: relative;
+    left: -50px;
+    bottom: -50px;
+}
+
+.welcome-message-bubble {
+    background-color: var(--card-background);
+    padding: 2rem;
+    border-radius: 15px;
+    position: relative;
+    text-align: left;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    margin-left: -50px;
+    min-width: 400px;
+}
+
+.welcome-message-bubble:before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-right-color: var(--card-background);
+    border-left: 0;
+    border-top: 0;
+    top: 50%;
+    left: -18px;
+    transform: translateY(-50%);
+}
+
+.welcome-message-bubble h2 {
+    font-size: 1.8rem;
+    color: var(--primary-blue);
+    margin-bottom: 0.8rem;
+    text-align: center;
+}
+
+.welcome-message-bubble p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.welcome-message-bubble .primary-btn {
+    padding: 0.8rem 1.5rem;
+    font-size: 1.1rem;
+    width: auto;
+    display: inline-block;
+}
+
+/* Blur effect for background content */
+.blurry-background > :not(#welcome-popup) {
+    filter: blur(5px);
+    transition: filter 0.3s ease-out;
+}
+
+/* Assistant Container (for floating button and chat) */
+/* Assistant Container (for floating button and chat) */
+.assistant-container {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    z-index: 1500;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.5rem;
+}
+
+/* This is the new, clean styling for the assistant's button */
+.assistant-bubble {
+    background-color: var(--card-background);
+    border: 2px solid var(--primary-blue);
+    border-radius: 30px;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    box-shadow: 0 4px 10px var(--shadow-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.assistant-bubble:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px var(--shadow-color);
+}
+
+.assistant-icon {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.assistant-text {
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+/* Assistant Chat Window */
+.assistant-chat-window {
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    width: 350px;
+    height: 450px;
+    background-color: var(--card-background);
+    border-radius: 10px;
+    box-shadow: 0 4px 20px var(--shadow-color);
+    display: flex;
+    flex-direction: column;
+    transform: scale(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-in-out;
+    border: 1px solid var(--border-color);
+    margin-bottom: 0.5rem;
+    overflow: hidden;
+}
+
+.assistant-chat-window.active {
+    transform: scale(1);
+}
+
+.assistant-chat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 1rem;
+    background-color: var(--primary-blue);
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* Redesigned Close Button */
+.assistant-chat-header .close-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+.assistant-chat-header .close-btn:hover {
+    transform: scale(1.2);
+}
+
+/* Redesigned Chat Input and Textbox */
+.assistant-chat-messages {
+    flex: 1;
+    overflow-y: auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    background-color: var(--input-bg);
+}
+
+.chat-message {
+    padding: 0.75rem 1rem;
+    border-radius: 15px;
+    max-width: 80%;
+    word-wrap: break-word;
+    box-shadow: 0 2px 5px var(--shadow-color);
+}
+
+.user-message {
+    background-color: var(--primary-blue);
+    color: white;
+    align-self: flex-end;
+}
+
+.bot-message {
+    background-color: var(--border-color);
+    color: var(--text-color);
+    align-self: flex-start;
+}
+
+.chat-input {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background-color: var(--card-background);
+    border-top: 1px solid var(--border-color);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#assistant-user-input {
+    flex: 1;
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    min-height: 40px;
+    background-color: var(--input-bg);
+    color: var(--text-color);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    resize: none;
+    line-height: 1.5;
+}
+
+#assistant-user-input:focus {
+    outline: none;
+    border-color: var(--primary-blue);
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.2);
+}
+
+#assistant-send-btn {
+    background: none;
+    border: none;
+    color: var(--primary-blue);
+    font-size: 2rem;
+    margin-left: 0.5rem;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+#assistant-send-btn:hover {
+    color: var(--active-nav-link);
+    transform: translateX(5px);
+}
+
+ai routine html 
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Routine Generator - PhysioGuardian</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .ai-routine-main {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 4rem 2rem;
+            flex-grow: 1;
+        }
+        .generator-container {
+            width: 100%;
+            max-width: 800px;
+            background-color: var(--card-background);
+            padding: 2.5rem;
+            border-radius: 12px;
+            box-shadow: 0 8px 30px var(--shadow-color);
+            text-align: center;
+        }
+        .generator-container h1 {
+            color: var(--primary-blue);
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        .generator-container p.tagline {
+            color: var(--secondary-text-color);
+            margin-bottom: 2.5rem;
+        }
+        #problem-description {
+            width: 100%;
+            min-height: 120px;
+            padding: 1rem;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            background-color: var(--input-bg);
+            color: var(--text-color);
+            font-size: 1.1rem;
+            resize: vertical;
+            margin-bottom: 1.5rem;
+        }
+        #generate-btn {
+            width: auto;
+            padding: 0.8rem 2.5rem;
+            font-size: 1.1rem;
+        }
+        #results-container {
+            margin-top: 3rem;
+            text-align: left;
+        }
+        #explanation-container {
+            background-color: var(--input-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            border: 1px solid var(--border-color);
+        }
+        #explanation-container h3 {
+            color: var(--primary-blue);
+            margin-bottom: 0.75rem;
+        }
+        #explanation-container p {
+            color: var(--secondary-text-color);
+            line-height: 1.7;
+        }
+        #results-container h2 {
+            font-size: 1.5rem;
+            color: var(--primary-blue);
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        .card-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            justify-content: center;
+        }
+        .card-row .card {
+            min-width: 250px;
+            text-decoration: none;
+            color: var(--text-color);
+        }
+        .card-row .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px var(--shadow-color);
+        }
+        .card-row .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px 8px 0 0;
+        }
+        .card-row .card h3 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            padding: 1rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body data-theme="dark">
+    <header>
+        <div class="logo">
+            <h1>PhysioGuardian</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="clinic-locator.html">Clinic Locator</a></li>
+                <li><a href="fee-predictor.html">Fee Predictor</a></li>
+                <li><a href="chat.html">Emergency Chat</a></li>
+            </ul>
+        </nav>
+        <div class="header-right">
+            <div class="user-profile">G</div>
+            <button id="theme-toggle" aria-label="Toggle light and dark mode">
+                <i class="fas fa-sun sun-icon"></i>
+                <i class="fas fa-moon moon-icon"></i>
+            </button>
+        </div>
+    </header>
+
+    <main class="ai-routine-main">
+        <div class="generator-container">
+            <h1>Smart Routine Generator</h1>
+            <p class="tagline">Describe your pain or discomfort below, and our system will suggest a personalized exercise routine to help you on your path to recovery.</p>
+            
+            <textarea id="problem-description" placeholder="For example: 'I have a stiff neck and shoulder from sitting all day' or 'My lower back hurts'"></textarea>
+            
+            <button id="generate-btn" class="primary-btn">Generate My Routine</button>
+
+            <div id="results-container">
+                </div>
+        </div>
+    </main>
+    
+    <script src="script.js"></script>
+    <script src="ai-routine.js"></script>
+</body>
+</html>
+
+ai js
+document.addEventListener('DOMContentLoaded', () => {
+    const generateBtn = document.getElementById('generate-btn');
+    const problemDescription = document.getElementById('problem-description');
+    const resultsContainer = document.getElementById('results-container');
+
+    const availableRoutines = [
+        {
+            key: 'back_pain',
+            name: 'Lower Back Relief',
+            keywords: ['back', 'spine', 'lumbar'],
+            img: 'https://placehold.co/400x225/00bcd4/ffffff?text=Back+Pain',
+            reason: 'Lower back pain often stems from prolonged sitting, which can lead to weak core muscles and tight hip flexors. The suggested exercises focus on strengthening your core and improving flexibility in your hips and spine.'
+        },
+        {
+            key: 'shoulder_mobility',
+            name: 'Shoulder Mobility',
+            keywords: ['shoulder', 'rotator cuff', 'arm'],
+            img: 'https://placehold.co/400x225/00bcd4/ffffff?text=Shoulder',
+            reason: 'Shoulder discomfort is commonly caused by poor posture, like rounded shoulders from desk work or phone use. This routine helps to open up the chest and improve the range of motion in your shoulder joints.'
+        },
+        {
+            key: 'knee_strength',
+            name: 'Knee Strength',
+            keywords: ['knee', 'leg'],
+            img: 'https://placehold.co/400x225/00bcd4/ffffff?text=Knee',
+            reason: 'Knee pain can be a result of muscle imbalances or weakness in the muscles that support the knee, such as the quadriceps and glutes. These exercises are designed to build strength around the joint, providing better stability.'
+        },
+        {
+            key: 'posture_correction',
+            name: 'Posture Correction',
+            keywords: ['posture', 'neck', 'stiff', 'sitting'],
+            img: 'https://placehold.co/400x225/00bcd4/ffffff?text=Posture',
+            reason: 'Stiffness in the neck and upper back is often a sign of postural strain, sometimes called "tech neck." The following routine focuses on gentle stretches to relieve tension and correct postural habits.'
+        }
+    ];
+
+    generateBtn.addEventListener('click', () => {
+        const userInput = problemDescription.value.toLowerCase();
+        if (userInput.trim() === '') {
+            resultsContainer.innerHTML = '<h2>Please describe your problem first.</h2>';
+            return;
+        }
+
+        const suggestions = availableRoutines.filter(routine => 
+            routine.keywords.some(keyword => userInput.includes(keyword))
+        );
+
+        displaySuggestions(suggestions);
+    });
+
+    function displaySuggestions(suggestions) {
+        if (suggestions.length === 0) {
+            resultsContainer.innerHTML = `
+                <h2>Sorry, no specific routine found.</h2>
+                <p style="text-align: center;">Try using keywords like "back", "knee pain", "stiff neck", or "shoulder".</p>
+            `;
+            return;
+        }
+
+        // Build the explanation part first
+        let explanationHTML = '';
+        suggestions.forEach(routine => {
+            explanationHTML += `
+                <div id="explanation-container">
+                    <h3>Possible Cause for ${routine.name}</h3>
+                    <p>${routine.reason}</p>
+                </div>
+            `;
+        });
+        
+        // Build the routine cards part
+        let cardsHTML = `
+            <h2>Here is your suggested routine:</h2>
+            <div class="card-row">
+        `;
+        suggestions.forEach(routine => {
+            cardsHTML += `
+                <a href="exercise.html?exercise=${routine.key}" class="card">
+                    <img src="${routine.img}" alt="${routine.name}">
+                    <h3>${routine.name}</h3>
+                </a>
+            `;
+        });
+        cardsHTML += `</div>`;
+
+        // Combine both parts and display
+        resultsContainer.innerHTML = explanationHTML + cardsHTML;
+    }
+});
+
+exercise html
+
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise Correction - PhysioGuardian</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/pose/pose.js" crossorigin="anonymous"></script>
+    
+    <style>
+        .exercise-main {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 4rem 2rem;
+            flex-grow: 1;
+        }
+        .exercise-container {
+            width: 100%;
+            max-width: 1200px; /* Increased width for side-by-side layout */
+            background-color: var(--card-background);
+            padding: 2.5rem;
+            border-radius: 12px;
+            box-shadow: 0 8px 30px var(--shadow-color);
+            text-align: center;
+        }
+        #routine-title {
+            color: var(--primary-blue);
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        #exercise-title {
+            font-size: 1.25rem;
+            color: var(--secondary-text-color);
+            margin-bottom: 2rem;
+        }
+        /* New Grid Layout */
+        .exercise-layout-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr; /* 1.2fr for video, 1fr for controls */
+            gap: 2.5rem;
+            align-items: flex-start;
+        }
+        .video-panel {
+            position: relative;
+        }
+        .video-container {
+            position: relative;
+            width: 100%;
+            border-radius: 8px;
+            overflow: hidden;
+            background-color: #000;
+        }
+        #webcam {
+            width: 100%;
+            height: auto;
+            transform: scaleX(-1);
+            display: block;
+        }
+        #output_canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        #loading-message {
+            color: var(--secondary-text-color);
+            text-align: center;
+            margin-top: 1rem;
+        }
+        .controls-panel {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            height: 100%;
+        }
+        .feedback-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+        .feedback-card {
+            background-color: var(--input-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+        }
+        .feedback-card h3 {
+            color: var(--primary-blue);
+            margin-bottom: 0.75rem;
+            font-size: 1.1rem;
+        }
+        .feedback-card p {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: var(--text-color);
+        }
+        .large-feedback-card {
+            /* This will now be part of the flex column, no grid span needed */
+        }
+        .large-feedback-card p {
+            font-size: 1.3rem;
+            font-weight: 500;
+        }
+        .instructions-section {
+            background-color: var(--input-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            text-align: left;
+        }
+        .instructions-section h3 {
+            color: var(--primary-blue);
+            margin-bottom: 1rem;
+        }
+        .instructions-section ol {
+            padding-left: 1.5rem;
+            color: var(--secondary-text-color);
+        }
+        .instructions-section ol li {
+            margin-bottom: 0.5rem;
+        }
+        #next-exercise-btn {
+            width: 100%;
+            padding: 0.8rem 2.5rem;
+            font-size: 1.1rem;
+            margin-top: auto; /* Pushes button to the bottom of the flex container */
+        }
+    </style>
+</head>
+<body data-theme="dark">
+    <header>
+        <div class="logo">
+            <h1>PhysioGuardian</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="clinic-locator.html">Clinic Locator</a></li>
+                <li><a href="fee-predictor.html">Fee Predictor</a></li>
+                <li><a href="chat.html">Emergency Chat</a></li>
+            </ul>
+        </nav>
+        <div class="header-right">
+            <div class="user-profile">G</div>
+            <button id="theme-toggle" aria-label="Toggle light and dark mode">
+                <i class="fas fa-sun sun-icon"></i>
+                <i class="fas fa-moon moon-icon"></i>
+            </button>
+        </div>
+    </header>
+
+    <main class="exercise-main">
+        <div class="exercise-container">
+            <h1 id="routine-title">Loading Routine...</h1>
+            <p id="exercise-title"></p>
+
+            <div class="exercise-layout-grid">
+                <div class="video-panel">
+                    <div class="video-container">
+                        <video id="webcam" autoplay playsinline></video>
+                        <canvas id="output_canvas" width="640" height="480"></canvas>
+                    </div>
+                    <p id="loading-message">Please grant camera access and wait for the model to load...</p>
+                </div>
+
+                <div class="controls-panel">
+                    <div class="feedback-grid">
+                        <div class="feedback-card">
+                            <h3>Reps</h3>
+                            <p id="rep-counter">0 / 10</p>
+                        </div>
+                        <div class="feedback-card">
+                            <h3>Stage</h3>
+                            <p id="stage">-</p>
+                        </div>
+                    </div>
+                    <div class="feedback-card large-feedback-card">
+                        <h3>Real-Time Feedback</h3>
+                        <p id="feedback">Position yourself in front of the camera.</p>
+                    </div>
+                    <div class="instructions-section">
+                        <h3>Instructions</h3>
+                        <ol id="instructions">
+                            <li>Instructions for the current exercise will appear here.</li>
+                        </ol>
+                    </div>
+                    <button id="next-exercise-btn" class="primary-btn">Next Exercise</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+    <script src="exercise.js"></script>
+</body>
+</html>

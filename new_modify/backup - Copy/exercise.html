@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise Correction - PhysioGuardian</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/pose/pose.js" crossorigin="anonymous"></script>
+    
+    <style>
+        .exercise-main {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 4rem 2rem;
+            flex-grow: 1;
+        }
+        .exercise-container {
+            width: 100%;
+            max-width: 1200px;
+            background-color: var(--card-background);
+            padding: 2.5rem;
+            border-radius: 12px;
+            box-shadow: 0 8px 30px var(--shadow-color);
+            text-align: center;
+        }
+        #routine-title {
+            color: var(--primary-blue);
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        #exercise-title {
+            font-size: 1.25rem;
+            color: var(--secondary-text-color);
+            margin-bottom: 2rem;
+        }
+        .exercise-layout-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 2.5rem;
+            align-items: flex-start;
+        }
+        .video-panel {
+            position: relative;
+        }
+        .video-container {
+            position: relative;
+            width: 100%;
+            border-radius: 8px;
+            overflow: hidden;
+            background-color: #000;
+        }
+        #webcam {
+            width: 100%;
+            height: auto;
+            transform: scaleX(-1);
+            display: block;
+        }
+        #output_canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        #loading-message {
+            color: var(--secondary-text-color);
+            text-align: center;
+            margin-top: 1rem;
+        }
+        .controls-panel {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            height: 100%;
+        }
+        .feedback-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+        .feedback-card {
+            background-color: var(--input-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+        }
+        .feedback-card h3 {
+            color: var(--primary-blue);
+            margin-bottom: 0.75rem;
+            font-size: 1.1rem;
+        }
+        .feedback-card p {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: var(--text-color);
+        }
+        .instructions-section {
+            background-color: var(--input-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            text-align: left;
+        }
+        .instructions-section h3 {
+            color: var(--primary-blue);
+            margin-bottom: 1rem;
+        }
+        .instructions-section ol {
+            padding-left: 1.5rem;
+            color: var(--secondary-text-color);
+        }
+        .instructions-section ol li {
+            margin-bottom: 0.5rem;
+        }
+        #next-exercise-btn {
+             margin-top: auto;
+        }
+        #next-exercise-btn:disabled {
+            background-color: var(--secondary-text-color);
+            cursor: not-allowed;
+            transform: none;
+        }
+    </style>
+</head>
+<body data-theme="dark">
+    <header>
+        <div class="logo">
+            <h1>PhysioGuardian</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="clinic-locator.html">Clinic Locator</a></li>
+                <li><a href="fee-predictor.html">Fee Predictor</a></li>
+                <li><a href="chat.html">Emergency Chat</a></li>
+            </ul>
+        </nav>
+        <div class="header-right">
+            <div id="auth-links" style="display: flex; align-items: center; gap: 1rem;"></div>
+            <div class="user-profile">G</div>
+            <button id="theme-toggle" aria-label="Toggle light and dark mode">
+                <i class="fas fa-sun sun-icon"></i>
+                <i class="fas fa-moon moon-icon"></i>
+            </button>
+        </div>
+    </header>
+
+    <main class="exercise-main">
+        <div class="exercise-container">
+            <h1 id="routine-title">Loading Routine...</h1>
+            <p id="exercise-title"></p>
+
+            <div class="exercise-layout-grid">
+                <div class="video-panel">
+                    <div class="video-container">
+                        <video id="webcam" autoplay playsinline></video>
+                        <canvas id="output_canvas" width="640" height="480"></canvas>
+                    </div>
+                    <p id="loading-message">Please grant camera access and wait for the model to load...</p>
+                </div>
+
+                <div class="controls-panel">
+                    <div class="feedback-grid">
+                        <div class="feedback-card">
+                            <h3>Reps</h3>
+                            <p id="rep-counter">0 / 10</p>
+                        </div>
+                        <div class="feedback-card">
+                            <h3>Stage</h3>
+                            <p id="stage">-</p>
+                        </div>
+                    </div>
+                    <div class="feedback-card">
+                        <h3>Real-Time Feedback</h3>
+                        <p id="feedback">Position yourself in front of the camera.</p>
+                    </div>
+                    <div class="instructions-section">
+                        <h3>Instructions</h3>
+                        <ol id="instructions">
+                            <li>Instructions for the current exercise will appear here.</li>
+                        </ol>
+                    </div>
+                    <div class="audio-controls" style="margin-bottom: 1rem;">
+                        <label style="display: flex; align-items: center; gap: 0.5rem;">
+                            <input type="checkbox" id="audio-toggle" checked>
+                            <span>Enable Audio Coaching</span>
+                        </label>
+                        <label style="display: flex; align-items: center; gap: 0.5rem; margin-top: 0.5rem;">
+                            <span>Voice Speed:</span>
+                            <input type="range" id="speech-rate" min="0.5" max="1.5" step="0.1" value="1" style="flex: 1;">
+                            <span id="rate-value">1.0x</span>
+                        </label>
+                    </div>
+                    <button id="next-exercise-btn" class="primary-btn action-btn">Next Exercise</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+    <script src="exercise.js"></script>
+    <script src="main-auth.js" type="module"></script>
+
+    <!-- ========================================
+     ELARA ASSISTANT - COPY THIS TO ALL PAGES
+     Place this BEFORE closing </body> tag
+     ======================================== -->
+
+<!-- Elara Assistant Container -->
+<div id="assistant-container" class="assistant-container">
+    <button id="assistant-bubble" class="assistant-bubble" 
+            title="Say 'Hey Elara' or double-click me!" 
+            aria-label="Elara AI Assistant">
+        <img src="asistant2.png" alt="Elara Assistant" class="assistant-icon">
+        <span class="assistant-text">Elara</span>
+    </button>
+    
+    <div id="assistant-chat-window" class="assistant-chat-window">
+        <div class="assistant-chat-header">
+            <h3>🤖 Elara - Your AI Guide</h3>
+            <button id="close-assistant-chat" class="close-btn" aria-label="Close chat">×</button>
+        </div>
+        
+        <div id="assistant-chat-messages" class="chat-window">
+            <div class="chat-message bot-message">
+                <strong>👋 Hi! I'm Elara, your intelligent assistant!</strong>
+                <br><br>
+                <strong>🎤 Voice Commands:</strong>
+                <br>• Say <strong>"Hey Elara"</strong> to activate me
+                <br>• Double-click my icon for instant voice
+                <br>• Use the microphone button below
+                <br><br>
+                <strong>💬 Try These:</strong>
+                <br>• "Go to clinic locator"
+                <br>• "Open fee predictor"
+                <br>• "Show me exercises"
+                <br>• "What can you do?"
+                <br><br>
+                <strong>✨ I can navigate, answer questions, and guide you through the entire website!</strong>
+            </div>
+        </div>
+        
+        <div class="chat-input">
+            <input type="text" 
+                   id="assistant-user-input" 
+                   placeholder="Type a message or click 🎤..."
+                   aria-label="Chat with Elara">
+            <button id="voice-command-btn" 
+                    class="voice-btn" 
+                    title="Voice Command"
+                    aria-label="Use voice command">
+                <i class="fas fa-microphone"></i>
+            </button>
+            <button id="assistant-send-btn" 
+                    class="send-btn"
+                    aria-label="Send message">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="audio-controls" style="margin-bottom: 1rem;">
+    <label style="display: flex; align-items: center; gap: 0.5rem;">
+        <input type="checkbox" id="audio-toggle" checked>
+        <span>Enable Audio Coaching</span>
+    </label>
+    <label style="display: flex; align-items: center; gap: 0.5rem; margin-top: 0.5rem;">
+        <span>Voice Speed:</span>
+        <input type="range" id="speech-rate" min="0.5" max="1.5" step="0.1" value="1" style="flex: 1;">
+        <span id="rate-value">1.0x</span>
+    </label>
+</div>
+
+<!-- Load Elara Assistant Script -->
+<script src="elara-assistant.js"></script>
+
+<!-- ======================================== 
+     END OF ELARA ASSISTANT SNIPPET
+     ======================================== -->
+
+
+</body>
+</html>

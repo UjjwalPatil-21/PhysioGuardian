@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhysioGuardian - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>PhysioGuardian</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="clinic-locator.html">Clinic Locator</a></li>
+                <li><a href="fee-predictor.html">Fee Predictor</a></li>
+                <li><a href="chat.html">Emergency Chat</a></li>
+                <li><a href="index.html#about-us">About Us</a></li> 
+            </ul>
+        </nav>
+        <div class="header-right">
+            <div id="auth-links" style="display: flex; align-items: center; gap: 1rem;"></div>
+            <div class="user-profile">G</div>
+            <button id="theme-toggle" aria-label="Toggle light and dark mode">
+                <i class="fas fa-sun sun-icon"></i>
+                <i class="fas fa-moon moon-icon"></i>
+            </button>
+        </div>
+    </header>
+    <main class="home-main">
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1 class="hero-title">Your Recovery, Redefined.</h1>
+                <p class="hero-tagline">Personalized exercise plans, tailored just for you. Describe your pain, and let us build your path to recovery.</p>
+                <a href="ai-routine.html" class="primary-btn hero-btn">Get Started</a>
+            </div>
+        </section>
+        <section class="content-rows-section">
+            <h2 class="content-row-title">Popular Programs</h2>
+            <div class="card-row">
+                <a href="exercise.html?exercise=back_pain" class="card">
+                    <img src="https://placehold.co/400x225/00bcd4/ffffff?text=Back+Pain" alt="Back Pain Program">
+                    <h3>Lower Back Relief</h3>
+                </a>
+                <a href="exercise.html?exercise=shoulder_mobility" class="card">
+                    <img src="https://placehold.co/400x225/00bcd4/ffffff?text=Shoulder" alt="Shoulder Program">
+                    <h3>Shoulder Mobility</h3>
+                </a>
+                <a href="exercise.html?exercise=knee_strength" class="card">
+                    <img src="https://placehold.co/400x225/00bcd4/ffffff?text=Knee" alt="Knee Program">
+                    <h3>Knee Strength</h3>
+                </a>
+                <a href="exercise.html?exercise=posture_correction" class="card">
+                    <img src="https://placehold.co/400x225/00bcd4/ffffff?text=Posture" alt="Posture Program">
+                    <h3>Posture Correction</h3>
+                </a>
+            </div>
+        </section>
+        <section class="content-rows-section">
+            <h2 class="content-row-title">How It Works</h2>
+            <div class="how-it-works-grid">
+                <div class="how-it-works-item">
+                    <div class="icon-circle"><i class="fas fa-comments"></i></div>
+                    <h3>1. Describe Your Pain</h3>
+                    <p>Tell our smart assistant about your symptoms.</p>
+                </div>
+                <div class="how-it-works-item">
+                    <div class="icon-circle"><i class="fas fa-cogs"></i></div>
+                    <h3>2. Get Your Plan</h3>
+                    <p>Receive an instant, personalized exercise plan.</p>
+                </div>
+                <div class="how-it-works-item">
+                    <div class="icon-circle"><i class="fas fa-running"></i></div>
+                    <h3>3. Start Recovering</h3>
+                    <p>Follow guided videos and track your progress.</p>
+                </div>
+            </div>
+        </section>
+        <section id="about-us" class="content-rows-section">
+            <h2 class="content-row-title">About Us</h2>
+            <div class="about-us-container">
+                <p class="about-us-overview">
+                    PhysioGuardian is a digital platform dedicated to making physiotherapy more accessible and effective. Our goal is to empower individuals on their recovery journey by providing interactive, guided exercises with real-time feedback, a smart routine generator based on user-described symptoms, and a comprehensive clinic locator to connect with professionals.
+                </p>
+                <div class="about-us-grid">
+                    <div class="about-us-card">
+                        <h3><i class="fas fa-user-cog"></i> Aditya Acharya</h3>
+                        <p class="role">Co-Creator</p>
+                        <a href="mailto:adityaacharya2004@gmail.com" class="email-link"><i class="fas fa-envelope"></i> adityaacharya2004@gmail.com</a>
+                    </div>
+                    <div class="about-us-card">
+                        <h3><i class="fas fa-user-cog"></i> Ujjwal Patil</h3>
+                        <p class="role">Co-Creator</p>
+                        <a href="mailto:ujjwalpatil2811@gmail.com" class="email-link"><i class="fas fa-envelope"></i> ujjwalpatil2811@gmail.com</a>
+                    </div>
+                    <div class="about-us-card">
+                        <h3><i class="fas fa-user-md"></i> Dr. Arjun Sharma</h3>
+                        <p class="role">Consulting Physiotherapist</p>
+                        <p class="auth-text"><i class="fas fa-check-circle"></i> Medically Authenticated</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="welcome-popup" class="welcome-popup">
+        <div class="welcome-content">
+            <img src="asistant.png" alt="Elara, the Assistant" class="welcome-image">
+            <div class="welcome-message-bubble">
+                <h2>Welcome, Chief!</h2>
+                <p>Hello! I'm Elara, your personal guide for PhysioGuardian. I'm here to help you navigate our website and find the best care. Feel free to ask me questions about our features or how to get started.</p>
+                <a href="clinic-locator.html" id="close-welcome" class="primary-btn">Let's go!</a>
+            </div>
+        </div>
+    </div>
+   
+    <!--
+    <div id="assistant-container" class="assistant-container">
+        <button id="assistant-bubble" class="assistant-bubble">
+            <img src="asistant2.png" alt="Elara, the Assistant" class="assistant-icon">
+            <span class="assistant-text">Elara</span>
+        </button>
+        <div id="assistant-chat-window" class="assistant-chat-window">
+            <div class="assistant-chat-header">
+                <h3>Elara, the Assistant</h3>
+                <button id="close-assistant-chat" class="close-btn">×</button>
+            </div>
+            <div id="assistant-chat-messages" class="chat-window">
+                <div class="chat-message bot-message">Hi! I'm Elara, your personal guide. How can I help you navigate PhysioGuardian?</div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="assistant-user-input" placeholder="Ask about the website...">
+                <button id="assistant-send-btn" class="send-btn"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>-->
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+    <script src="theme-toggle.js"></script>
+    <script src="main-auth.js" type="module"></script>
+    <!-- ========================================
+     ELARA ASSISTANT - COPY THIS TO ALL PAGES
+     Place this BEFORE closing </body> tag
+     ======================================== -->
+
+<!-- Elara Assistant Container -->
+<!-- Elara Assistant Container 
+<div id="assistant-container" class="assistant-container">
+    <button id="assistant-bubble" class="assistant-bubble" title="Double-click or say 'Hey Elara'">
+        <img src="asistant2.png" alt="Elara, the Assistant" class="assistant-icon">
+        <span class="assistant-text">Elara</span>
+    </button>
+    <div id="assistant-chat-window" class="assistant-chat-window">
+        <div class="assistant-chat-header">
+            <h3>Elara, Your AI Assistant</h3>
+            <button id="close-assistant-chat" class="close-btn">×</button>
+        </div>
+        <div id="assistant-chat-messages" class="chat-window">
+            <div class="chat-message bot-message">
+                Hi! I'm Elara 👋
+                <br><br>
+                <strong>Try these commands:</strong>
+                <br>• Say "Hey Elara" to activate me
+                <br>• Double-click my icon
+                <br>• Or type your message below
+                <br><br>
+                I can navigate pages, guide you through exercises, and answer questions!
+            </div>
+        </div>
+        <div class="chat-input">
+            <input type="text" id="assistant-user-input" placeholder="Type a message or use voice...">
+            <button id="voice-command-btn" class="voice-btn" title="Voice Command">
+                <i class="fas fa-microphone"></i>
+            </button>
+            <button id="assistant-send-btn" class="send-btn">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+</div>
+-->
+<!-- Elara Script (Load at end of body) 
+<script src="elara-assistant.js"></script>
+
+-->
+
+
+
+
+
+<!-- ======================================== 
+     END OF ELARA ASSISTANT SNIPPET
+     ======================================== -->
+
+
+
+<!-- ========================================
+     ENHANCED ELARA ASSISTANT
+     Place this BEFORE closing </body> tag on ALL pages
+     ======================================== -->
+
+<!-- Elara Assistant Container -->
+<div id="assistant-container" class="assistant-container">
+    <button 
+        id="assistant-bubble" 
+        class="assistant-bubble" 
+        title="Say 'Hey Elara' or double-click me!" 
+        aria-label="Elara AI Assistant"
+    >
+        <img src="asistant2.png" alt="Elara Assistant" class="assistant-icon">
+        <span class="assistant-text">Elara</span>
+    </button>
+    
+    <div id="assistant-chat-window" class="assistant-chat-window">
+        <div class="assistant-chat-header">
+            <h3>🤖 Elara - Your AI Guide</h3>
+            <button id="close-assistant-chat" class="close-btn" aria-label="Close chat">×</button>
+        </div>
+        
+        <div id="assistant-chat-messages" class="chat-window">
+            <div class="chat-message bot-message">
+                <strong>👋 Hi! I'm Elara, your intelligent assistant!</strong>
+                <br><br>
+                <strong>🎤 Voice Commands:</strong>
+                <br>• Say <strong>"Hey Elara"</strong> to activate me
+                <br>• Double-click my icon for instant voice
+                <br>• Use the microphone button below
+                <br><br>
+                <strong>💬 Try These:</strong>
+                <br>• "Show me clinic locator"
+                <br>• "Where is fee predictor?"
+                <br>• "Take me to exercises"
+                <br>• "What can you do?"
+                <br><br>
+                <strong>✨ I'll guide you with visual arrows to help you navigate!</strong>
+            </div>
+        </div>
+        
+        <div class="chat-input">
+            <input 
+                type="text" 
+                id="assistant-user-input" 
+                placeholder="Type a message or click 🎤..."
+                aria-label="Chat with Elara"
+            >
+            <button 
+                id="voice-command-btn" 
+                class="voice-btn" 
+                title="Voice Command (or say 'Hey Elara')"
+                aria-label="Use voice command"
+            >
+                <i class="fas fa-microphone"></i>
+            </button>
+            <button 
+                id="assistant-send-btn" 
+                class="send-btn"
+                aria-label="Send message"
+            >
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Load Enhanced Elara Assistant Script -->
+<script src="elara-assistant-enhanced.js"></script>
+
+<!-- ======================================== 
+     END OF ENHANCED ELARA ASSISTANT SNIPPET
+     ======================================== -->
+
+
+     
+
+
+
+</body>
+</html>

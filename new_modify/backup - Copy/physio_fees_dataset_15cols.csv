@@ -1,0 +1,801 @@
+experience,rating,sessionDuration,serviceType,location,patientAge,complexityLevel,therapistGender,patientGender,timeSlot,numPreviousSessions,insuranceCoverage,clinicType,equipmentUsed,discountOffered,fee
+6,3.7,57,Post-surgical Rehab,Nagpur,33,Medium,Other,Other,Morning,5,1,Government,Specialized,22,1725.76
+19,4.6,34,Sports Injury Rehab,Pune,60,High,Male,Female,Afternoon,9,1,Clinic Chain,Specialized,7,2584.44
+28,4.4,53,Post-surgical Rehab,Nashik,27,High,Female,Female,Morning,17,0,Clinic Chain,Advanced,2,3266.67
+14,3.7,80,Therapy Session,Nagpur,42,Low,Male,Male,Afternoon,11,0,Clinic Chain,Specialized,2,1674.69
+10,3.6,54,Therapy Session,Aurangabad,37,Low,Male,Male,Afternoon,3,1,Clinic Chain,Advanced,6,1081.21
+7,4.6,83,Sports Injury Rehab,Mumbai,48,High,Other,Male,Evening,16,1,Private,Basic,3,2356.97
+28,3.6,44,Post-surgical Rehab,Aurangabad,21,Low,Other,Female,Evening,14,0,Private,Basic,2,1907.83
+20,4.7,43,Post-surgical Rehab,Pune,61,High,Male,Male,Evening,5,0,Government,Advanced,14,2380.29
+6,4.6,31,Post-surgical Rehab,Nashik,40,High,Male,Female,Morning,15,1,Private,Advanced,7,2514.9
+25,3.6,37,Follow-up Session,Nashik,19,Low,Female,Female,Morning,16,0,Government,Advanced,2,842.58
+18,3.6,34,Therapy Session,Pune,73,Low,Other,Male,Afternoon,2,0,Private,Advanced,28,1081.23
+22,5.0,99,Post-surgical Rehab,Nagpur,39,Medium,Female,Other,Afternoon,9,1,Clinic Chain,Basic,29,2269.24
+10,4.1,46,Post-surgical Rehab,Nagpur,68,Medium,Female,Other,Afternoon,4,1,Clinic Chain,Specialized,6,2451.92
+10,4.1,91,Follow-up Session,Nashik,74,Medium,Female,Other,Afternoon,13,1,Private,Specialized,17,1304.71
+23,4.7,79,Follow-up Session,Nashik,54,High,Male,Female,Morning,12,0,Private,Basic,10,1840.55
+20,4.9,65,Post-surgical Rehab,Mumbai,25,Low,Female,Female,Afternoon,5,1,Government,Specialized,10,1940.45
+3,5.0,108,Initial Consultation,Nagpur,24,High,Female,Female,Afternoon,11,1,Government,Basic,16,1364.08
+7,4.6,36,Post-surgical Rehab,Pune,31,Low,Male,Male,Evening,7,0,Government,Specialized,27,1525.09
+23,4.1,112,Post-surgical Rehab,Nagpur,73,High,Other,Female,Afternoon,4,1,Clinic Chain,Advanced,5,3442.38
+2,3.6,72,Follow-up Session,Mumbai,72,Medium,Other,Male,Afternoon,14,0,Clinic Chain,Advanced,7,1081.57
+21,4.7,27,Follow-up Session,Nashik,20,Medium,Female,Male,Afternoon,15,0,Clinic Chain,Advanced,0,1187.82
+20,4.3,98,Post-surgical Rehab,Nashik,67,Medium,Male,Other,Morning,0,0,Clinic Chain,Basic,28,2299.66
+1,4.1,46,Post-surgical Rehab,Mumbai,33,High,Other,Other,Evening,15,0,Government,Basic,9,1851.93
+23,4.9,65,Post-surgical Rehab,Pune,72,Low,Female,Other,Afternoon,4,0,Clinic Chain,Specialized,27,2284.03
+11,3.7,69,Follow-up Session,Nashik,36,Low,Female,Male,Afternoon,2,0,Clinic Chain,Specialized,24,883.84
+29,4.2,90,Post-surgical Rehab,Aurangabad,68,Medium,Male,Male,Evening,19,1,Clinic Chain,Specialized,18,2987.6
+5,3.5,22,Post-surgical Rehab,Nashik,35,Medium,Female,Male,Afternoon,14,1,Clinic Chain,Basic,2,1546.36
+1,4.2,112,Sports Injury Rehab,Aurangabad,69,Medium,Other,Female,Morning,12,1,Private,Specialized,3,2580.88
+27,3.6,83,Initial Consultation,Mumbai,33,Medium,Male,Male,Afternoon,15,0,Government,Advanced,10,1253.24
+20,3.7,63,Therapy Session,Mumbai,25,Low,Other,Other,Morning,10,1,Government,Specialized,14,1147.7
+0,3.7,72,Initial Consultation,Nashik,50,High,Other,Other,Morning,1,0,Clinic Chain,Advanced,0,1677.39
+11,4.5,43,Sports Injury Rehab,Nagpur,66,High,Other,Male,Afternoon,5,1,Private,Basic,8,2077.48
+25,4.6,79,Therapy Session,Aurangabad,29,High,Female,Male,Evening,5,0,Government,Advanced,10,2032.06
+21,4.4,22,Post-surgical Rehab,Pune,70,High,Female,Other,Morning,13,1,Government,Advanced,18,1906.73
+28,4.9,39,Sports Injury Rehab,Nashik,28,Medium,Other,Male,Evening,10,0,Clinic Chain,Advanced,12,2004.66
+11,4.1,65,Post-surgical Rehab,Pune,22,Medium,Other,Other,Afternoon,7,1,Clinic Chain,Basic,25,1820.32
+24,3.9,34,Follow-up Session,Nashik,44,Medium,Male,Female,Morning,7,0,Government,Basic,15,808.31
+16,4.8,44,Sports Injury Rehab,Nagpur,29,High,Male,Other,Afternoon,0,1,Government,Basic,3,1713.77
+26,3.8,113,Follow-up Session,Nagpur,34,Medium,Female,Female,Evening,6,0,Private,Basic,0,1843.24
+26,4.9,97,Sports Injury Rehab,Nagpur,23,Medium,Female,Male,Afternoon,5,1,Government,Specialized,19,2133.55
+9,3.5,90,Sports Injury Rehab,Nagpur,50,Low,Male,Male,Afternoon,7,1,Government,Basic,12,1098.5
+27,5.0,36,Follow-up Session,Mumbai,22,Low,Other,Female,Morning,18,1,Clinic Chain,Advanced,0,1015.26
+27,3.6,103,Therapy Session,Mumbai,74,Medium,Female,Male,Afternoon,19,0,Government,Basic,4,1582.01
+15,4.8,119,Initial Consultation,Aurangabad,45,Low,Other,Female,Afternoon,7,0,Clinic Chain,Specialized,4,1901.83
+14,4.3,28,Post-surgical Rehab,Pune,31,Low,Male,Male,Afternoon,13,0,Government,Specialized,13,1648.48
+29,5.0,57,Sports Injury Rehab,Nashik,22,Medium,Female,Other,Morning,17,0,Government,Specialized,26,1839.32
+29,3.6,67,Post-surgical Rehab,Nashik,71,Medium,Female,Male,Evening,15,0,Government,Advanced,22,1861.71
+14,4.3,79,Follow-up Session,Mumbai,73,Medium,Male,Other,Evening,8,1,Private,Basic,13,1246.0
+29,5.0,82,Post-surgical Rehab,Nashik,50,Medium,Female,Other,Afternoon,14,0,Clinic Chain,Basic,7,2687.76
+18,4.3,105,Follow-up Session,Mumbai,67,High,Male,Female,Morning,9,1,Private,Basic,3,1879.32
+11,4.4,21,Post-surgical Rehab,Aurangabad,65,High,Female,Male,Afternoon,15,1,Government,Advanced,6,1995.27
+22,4.5,107,Initial Consultation,Pune,58,Medium,Male,Female,Evening,3,0,Private,Advanced,19,1951.93
+19,4.2,91,Initial Consultation,Aurangabad,36,Low,Female,Male,Morning,19,1,Clinic Chain,Specialized,18,1224.28
+24,4.4,30,Initial Consultation,Nagpur,39,Medium,Other,Other,Evening,12,0,Government,Specialized,14,1126.27
+2,4.4,83,Initial Consultation,Nagpur,22,Medium,Other,Other,Evening,4,0,Private,Basic,21,1183.99
+4,4.9,96,Initial Consultation,Nagpur,19,Low,Other,Male,Morning,6,0,Private,Advanced,3,1475.56
+18,3.6,100,Initial Consultation,Aurangabad,47,High,Female,Male,Morning,8,1,Clinic Chain,Advanced,29,1424.64
+6,3.9,91,Follow-up Session,Nashik,64,Medium,Female,Female,Afternoon,7,0,Private,Basic,18,1118.94
+20,4.9,40,Sports Injury Rehab,Pune,56,Medium,Other,Male,Afternoon,15,0,Clinic Chain,Basic,8,1676.88
+8,4.8,37,Post-surgical Rehab,Nagpur,21,High,Other,Male,Evening,5,0,Government,Specialized,20,2438.18
+6,4.2,113,Initial Consultation,Nagpur,50,High,Male,Male,Morning,15,1,Government,Specialized,12,1538.61
+17,4.4,83,Follow-up Session,Nagpur,30,Low,Male,Female,Morning,5,0,Private,Specialized,13,1427.94
+3,3.9,101,Follow-up Session,Pune,37,High,Male,Male,Afternoon,13,1,Government,Basic,22,769.26
+24,3.8,114,Follow-up Session,Nagpur,71,High,Other,Other,Evening,0,1,Government,Basic,27,1257.46
+27,4.2,57,Sports Injury Rehab,Pune,24,High,Other,Female,Evening,8,0,Private,Specialized,13,3263.3
+13,4.0,51,Post-surgical Rehab,Nagpur,32,Low,Other,Female,Afternoon,12,1,Government,Specialized,21,1449.56
+17,4.4,30,Sports Injury Rehab,Aurangabad,40,High,Male,Other,Morning,18,1,Private,Advanced,9,2130.58
+25,3.6,64,Therapy Session,Aurangabad,31,High,Female,Other,Afternoon,16,0,Clinic Chain,Advanced,15,2071.14
+8,5.0,108,Follow-up Session,Pune,40,Low,Other,Other,Afternoon,10,0,Clinic Chain,Specialized,4,1599.22
+25,5.0,52,Therapy Session,Aurangabad,36,High,Female,Male,Afternoon,7,0,Clinic Chain,Specialized,22,2567.56
+20,4.5,60,Initial Consultation,Pune,71,High,Female,Other,Afternoon,4,1,Private,Advanced,26,1575.26
+1,4.3,27,Initial Consultation,Aurangabad,46,Low,Female,Male,Morning,9,0,Private,Specialized,5,961.55
+19,4.0,30,Sports Injury Rehab,Aurangabad,73,Medium,Male,Female,Afternoon,6,1,Government,Advanced,25,1157.83
+27,4.7,105,Post-surgical Rehab,Pune,37,Low,Female,Female,Morning,9,1,Government,Advanced,1,1989.28
+14,4.5,70,Therapy Session,Nashik,46,High,Other,Other,Afternoon,3,1,Government,Advanced,12,1661.36
+27,3.7,107,Post-surgical Rehab,Aurangabad,41,High,Male,Male,Evening,8,1,Government,Basic,28,2235.06
+6,4.9,60,Sports Injury Rehab,Nagpur,35,High,Other,Other,Morning,13,1,Government,Basic,12,1482.02
+11,4.7,36,Initial Consultation,Nashik,27,Low,Other,Other,Evening,1,0,Private,Specialized,18,1233.99
+28,4.9,95,Post-surgical Rehab,Pune,58,High,Male,Male,Afternoon,8,0,Private,Advanced,17,3859.07
+7,4.6,65,Post-surgical Rehab,Nashik,74,High,Other,Other,Afternoon,0,1,Clinic Chain,Basic,27,2192.67
+14,4.4,51,Initial Consultation,Mumbai,25,Low,Other,Female,Afternoon,9,1,Clinic Chain,Specialized,18,958.9
+2,4.1,98,Therapy Session,Mumbai,43,Medium,Male,Other,Morning,9,0,Clinic Chain,Specialized,0,2075.47
+13,4.9,99,Initial Consultation,Aurangabad,46,Medium,Other,Male,Evening,19,0,Clinic Chain,Specialized,7,1882.13
+16,4.8,73,Post-surgical Rehab,Aurangabad,27,High,Female,Male,Morning,2,1,Private,Specialized,21,3642.9
+3,3.6,105,Therapy Session,Nagpur,34,Low,Other,Female,Morning,5,1,Private,Specialized,15,1572.41
+17,3.5,111,Therapy Session,Nashik,19,High,Female,Male,Afternoon,5,0,Private,Advanced,28,2288.12
+7,4.1,39,Initial Consultation,Mumbai,23,Low,Other,Male,Evening,1,0,Government,Specialized,1,942.17
+3,4.7,52,Post-surgical Rehab,Aurangabad,22,Low,Male,Female,Afternoon,17,1,Government,Advanced,7,1422.17
+1,5.0,93,Sports Injury Rehab,Nashik,45,Medium,Male,Other,Morning,1,0,Clinic Chain,Basic,5,1842.51
+29,3.7,59,Post-surgical Rehab,Aurangabad,58,Medium,Other,Female,Afternoon,11,0,Government,Specialized,15,2343.14
+5,4.4,51,Follow-up Session,Aurangabad,22,Low,Male,Other,Evening,4,1,Private,Basic,22,550.86
+21,4.1,116,Sports Injury Rehab,Mumbai,35,High,Other,Female,Afternoon,19,1,Clinic Chain,Advanced,10,2668.55
+9,5.0,21,Therapy Session,Mumbai,43,Medium,Male,Other,Evening,6,1,Clinic Chain,Advanced,16,1140.62
+3,4.8,116,Sports Injury Rehab,Aurangabad,37,High,Female,Female,Evening,15,0,Government,Basic,22,1812.86
+21,4.8,52,Therapy Session,Pune,58,Medium,Other,Other,Afternoon,19,1,Clinic Chain,Specialized,18,1721.73
+28,4.2,96,Therapy Session,Aurangabad,66,Medium,Female,Female,Morning,0,0,Government,Specialized,10,2129.75
+17,4.1,49,Sports Injury Rehab,Aurangabad,44,High,Female,Other,Afternoon,0,1,Government,Basic,27,1497.96
+25,3.9,52,Therapy Session,Nagpur,66,Medium,Other,Female,Morning,16,1,Clinic Chain,Basic,7,1361.83
+11,3.6,96,Therapy Session,Nagpur,29,Medium,Female,Male,Morning,0,0,Government,Basic,21,1270.79
+1,4.8,45,Follow-up Session,Nagpur,24,High,Other,Other,Afternoon,19,0,Government,Specialized,3,1068.42
+9,4.7,41,Post-surgical Rehab,Pune,20,Medium,Female,Female,Morning,12,1,Government,Specialized,10,1922.16
+29,5.0,85,Post-surgical Rehab,Pune,27,Medium,Other,Other,Morning,8,1,Government,Specialized,7,2662.59
+3,5.0,57,Follow-up Session,Aurangabad,51,Medium,Other,Other,Afternoon,14,0,Clinic Chain,Basic,8,981.84
+13,4.3,109,Sports Injury Rehab,Nagpur,42,High,Male,Female,Afternoon,2,1,Private,Specialized,25,3120.05
+15,4.7,65,Initial Consultation,Pune,52,Low,Other,Other,Afternoon,13,0,Private,Advanced,1,1340.97
+14,4.9,34,Initial Consultation,Mumbai,33,High,Other,Female,Morning,10,0,Government,Basic,15,1083.21
+7,4.8,117,Initial Consultation,Aurangabad,19,Low,Female,Male,Evening,11,1,Government,Specialized,5,1260.96
+13,3.9,63,Follow-up Session,Nashik,41,Medium,Other,Other,Morning,12,0,Government,Basic,20,662.24
+22,4.2,68,Follow-up Session,Aurangabad,27,Low,Male,Male,Evening,12,0,Private,Advanced,20,1073.89
+27,3.7,94,Therapy Session,Nashik,55,High,Female,Other,Afternoon,0,0,Government,Advanced,25,1803.2
+24,4.9,80,Initial Consultation,Nagpur,39,High,Female,Other,Evening,9,1,Clinic Chain,Basic,26,1569.52
+29,4.4,86,Sports Injury Rehab,Nashik,43,Medium,Male,Other,Afternoon,2,0,Clinic Chain,Basic,18,2080.18
+7,3.8,25,Sports Injury Rehab,Nagpur,60,Low,Female,Female,Afternoon,3,1,Clinic Chain,Advanced,27,910.65
+20,4.5,28,Initial Consultation,Mumbai,72,Medium,Female,Male,Evening,15,1,Private,Basic,7,1054.04
+15,4.4,25,Initial Consultation,Nashik,56,Medium,Female,Other,Afternoon,7,1,Government,Advanced,13,830.78
+12,4.0,92,Initial Consultation,Aurangabad,44,High,Female,Female,Evening,15,0,Government,Advanced,23,1336.71
+17,3.7,114,Follow-up Session,Nagpur,46,Low,Male,Other,Afternoon,16,0,Government,Specialized,15,1195.42
+14,4.5,51,Follow-up Session,Aurangabad,64,Low,Male,Female,Morning,18,1,Private,Basic,11,743.35
+20,4.3,60,Follow-up Session,Pune,55,Low,Female,Other,Morning,14,1,Private,Basic,4,916.22
+23,4.7,95,Post-surgical Rehab,Nagpur,37,Low,Female,Male,Afternoon,15,0,Private,Specialized,23,2754.16
+25,4.3,27,Sports Injury Rehab,Nashik,44,Medium,Male,Male,Afternoon,14,1,Private,Advanced,25,1591.8
+24,4.8,91,Sports Injury Rehab,Nagpur,58,Medium,Male,Other,Evening,1,1,Clinic Chain,Basic,23,1938.79
+27,4.3,69,Therapy Session,Aurangabad,71,High,Male,Female,Morning,10,0,Private,Specialized,18,2868.02
+27,4.3,111,Follow-up Session,Mumbai,37,Medium,Female,Other,Evening,0,1,Private,Specialized,17,1987.28
+27,4.8,81,Post-surgical Rehab,Nagpur,61,Medium,Female,Female,Afternoon,14,0,Private,Basic,8,2722.19
+12,4.1,103,Post-surgical Rehab,Nashik,36,High,Other,Other,Afternoon,18,0,Government,Specialized,1,3161.04
+8,3.7,81,Sports Injury Rehab,Pune,37,High,Male,Female,Evening,3,1,Government,Advanced,24,1609.96
+28,3.5,26,Follow-up Session,Mumbai,52,High,Female,Male,Afternoon,10,0,Government,Specialized,19,1126.81
+14,4.6,94,Therapy Session,Pune,64,Medium,Male,Other,Morning,4,0,Clinic Chain,Advanced,11,1948.47
+12,4.4,103,Follow-up Session,Nagpur,19,Medium,Female,Male,Evening,2,0,Clinic Chain,Advanced,28,1262.32
+0,4.6,99,Initial Consultation,Aurangabad,47,High,Male,Male,Morning,12,1,Private,Basic,1,1580.04
+24,3.8,23,Follow-up Session,Aurangabad,70,High,Female,Other,Morning,9,1,Government,Specialized,9,963.2
+6,3.7,25,Initial Consultation,Nashik,51,High,Other,Other,Morning,10,1,Clinic Chain,Advanced,0,1022.1
+8,3.5,77,Initial Consultation,Aurangabad,39,Medium,Other,Female,Evening,17,0,Government,Advanced,3,1033.71
+23,4.0,41,Therapy Session,Mumbai,20,Medium,Male,Female,Afternoon,1,0,Clinic Chain,Specialized,24,1754.66
+0,4.4,45,Sports Injury Rehab,Aurangabad,23,Low,Female,Male,Morning,6,1,Clinic Chain,Advanced,11,1183.64
+11,4.1,22,Follow-up Session,Nashik,32,Medium,Female,Female,Morning,8,1,Private,Specialized,8,853.51
+7,4.2,60,Initial Consultation,Nagpur,44,Medium,Male,Female,Morning,9,0,Private,Basic,3,1298.87
+23,4.9,79,Follow-up Session,Nagpur,27,Medium,Female,Other,Afternoon,17,1,Clinic Chain,Advanced,8,1372.73
+10,4.0,33,Sports Injury Rehab,Aurangabad,26,High,Male,Female,Afternoon,6,1,Private,Advanced,27,1633.2
+18,4.3,94,Sports Injury Rehab,Pune,50,Medium,Female,Male,Evening,6,1,Clinic Chain,Specialized,5,2469.25
+16,4.7,101,Post-surgical Rehab,Nagpur,49,High,Male,Female,Afternoon,2,1,Clinic Chain,Specialized,0,4094.77
+7,4.1,31,Sports Injury Rehab,Aurangabad,65,Low,Female,Male,Evening,11,1,Government,Specialized,9,1127.62
+2,4.4,106,Therapy Session,Nashik,23,Low,Male,Other,Evening,6,0,Private,Specialized,28,1563.23
+2,4.8,31,Initial Consultation,Aurangabad,58,High,Female,Male,Evening,16,1,Private,Advanced,13,1025.24
+0,4.9,32,Post-surgical Rehab,Nagpur,53,High,Other,Female,Evening,0,1,Private,Basic,21,2174.74
+26,3.7,44,Therapy Session,Nashik,19,High,Female,Other,Evening,4,0,Government,Basic,24,1341.65
+4,4.9,64,Follow-up Session,Aurangabad,46,Medium,Male,Female,Morning,15,0,Government,Basic,28,597.83
+9,4.2,38,Initial Consultation,Mumbai,21,Low,Other,Other,Afternoon,14,0,Government,Basic,17,612.5
+6,3.9,74,Sports Injury Rehab,Nashik,18,High,Female,Other,Morning,1,0,Private,Specialized,5,3123.56
+25,4.2,119,Initial Consultation,Mumbai,36,Medium,Other,Female,Evening,8,1,Private,Advanced,17,1794.41
+8,5.0,64,Follow-up Session,Pune,43,Low,Female,Female,Afternoon,6,1,Private,Advanced,19,842.84
+27,4.2,27,Post-surgical Rehab,Nashik,42,Medium,Other,Other,Morning,3,1,Government,Advanced,15,1767.07
+6,4.0,112,Post-surgical Rehab,Mumbai,27,Low,Male,Other,Morning,19,1,Government,Specialized,14,1708.37
+8,4.5,72,Post-surgical Rehab,Nagpur,70,Medium,Female,Female,Evening,17,0,Clinic Chain,Advanced,15,2161.92
+7,3.9,74,Sports Injury Rehab,Nagpur,32,Low,Female,Male,Morning,3,0,Government,Specialized,7,1565.64
+11,3.6,51,Therapy Session,Pune,39,Low,Male,Female,Morning,12,1,Clinic Chain,Advanced,12,1049.01
+1,3.7,70,Therapy Session,Nashik,68,Medium,Other,Other,Morning,0,1,Private,Basic,22,1148.33
+0,3.7,63,Initial Consultation,Nashik,65,High,Male,Female,Morning,2,1,Government,Specialized,10,1141.54
+15,3.7,101,Sports Injury Rehab,Nashik,38,Low,Male,Male,Morning,15,1,Private,Advanced,27,1537.69
+22,3.7,89,Post-surgical Rehab,Pune,73,High,Other,Female,Evening,3,0,Private,Basic,28,2889.75
+22,4.5,37,Post-surgical Rehab,Nashik,39,Medium,Male,Other,Evening,15,1,Private,Basic,24,1911.13
+29,3.8,102,Follow-up Session,Nagpur,53,High,Female,Female,Morning,18,0,Private,Basic,6,1948.74
+23,4.0,41,Follow-up Session,Mumbai,51,High,Female,Other,Evening,0,0,Government,Specialized,16,1418.14
+4,4.8,56,Post-surgical Rehab,Nagpur,47,High,Female,Other,Evening,4,0,Private,Specialized,17,3394.26
+2,4.2,115,Post-surgical Rehab,Nagpur,42,High,Male,Female,Afternoon,18,0,Clinic Chain,Advanced,21,2821.07
+11,4.5,75,Sports Injury Rehab,Mumbai,62,High,Female,Other,Morning,10,1,Government,Basic,22,1587.88
+7,3.8,78,Therapy Session,Nagpur,45,Low,Female,Other,Evening,12,1,Private,Advanced,18,1059.75
+21,3.8,22,Follow-up Session,Pune,18,Low,Female,Male,Evening,19,1,Government,Advanced,24,293.96
+26,3.6,47,Therapy Session,Mumbai,66,Low,Female,Male,Morning,4,1,Clinic Chain,Basic,12,1132.1
+2,3.8,93,Sports Injury Rehab,Nagpur,62,Medium,Female,Male,Afternoon,3,0,Private,Advanced,14,2028.2
+0,3.9,54,Post-surgical Rehab,Aurangabad,21,High,Female,Male,Morning,3,0,Clinic Chain,Specialized,22,2731.29
+2,3.8,80,Therapy Session,Nagpur,24,Low,Male,Other,Afternoon,3,0,Private,Advanced,29,1118.73
+4,3.6,112,Post-surgical Rehab,Pune,66,Medium,Female,Female,Morning,3,1,Clinic Chain,Basic,21,2034.18
+14,3.7,73,Post-surgical Rehab,Nashik,26,Low,Female,Other,Morning,19,0,Private,Specialized,28,2181.5
+13,4.2,82,Initial Consultation,Nagpur,53,Low,Other,Other,Morning,17,0,Government,Specialized,21,1009.03
+2,3.8,98,Therapy Session,Nashik,36,High,Male,Other,Morning,17,0,Private,Advanced,0,2333.6
+0,4.0,116,Therapy Session,Aurangabad,18,Medium,Male,Female,Afternoon,15,0,Government,Advanced,28,1143.27
+4,4.3,26,Post-surgical Rehab,Nagpur,27,High,Male,Male,Afternoon,8,1,Private,Specialized,15,2841.78
+25,4.5,95,Sports Injury Rehab,Mumbai,53,High,Male,Other,Evening,17,0,Private,Advanced,4,3151.62
+22,3.6,68,Initial Consultation,Nashik,26,Low,Female,Other,Morning,1,0,Clinic Chain,Basic,25,1017.8
+13,4.7,113,Post-surgical Rehab,Aurangabad,62,High,Female,Male,Afternoon,3,1,Clinic Chain,Advanced,2,3504.5
+6,4.4,104,Follow-up Session,Mumbai,63,Medium,Other,Other,Afternoon,11,1,Clinic Chain,Advanced,22,1038.98
+26,3.6,50,Follow-up Session,Mumbai,59,High,Other,Female,Afternoon,6,1,Private,Specialized,9,1763.68
+8,4.8,77,Initial Consultation,Mumbai,49,High,Male,Other,Morning,14,0,Private,Advanced,18,1697.0
+14,4.9,80,Sports Injury Rehab,Mumbai,49,High,Other,Other,Evening,6,0,Private,Advanced,4,3100.41
+14,3.6,43,Post-surgical Rehab,Nagpur,23,Low,Other,Male,Afternoon,16,0,Government,Advanced,6,1436.48
+25,3.9,39,Therapy Session,Nagpur,65,Medium,Male,Other,Morning,15,0,Government,Basic,13,1076.01
+9,4.7,56,Initial Consultation,Nagpur,55,Low,Male,Other,Afternoon,18,1,Private,Advanced,2,1098.46
+27,4.6,23,Sports Injury Rehab,Aurangabad,34,Low,Other,Female,Afternoon,8,0,Clinic Chain,Basic,12,1497.14
+12,3.8,111,Therapy Session,Aurangabad,27,Low,Female,Male,Evening,13,0,Clinic Chain,Basic,12,1272.04
+18,3.8,39,Follow-up Session,Aurangabad,67,Low,Other,Male,Afternoon,16,1,Clinic Chain,Basic,9,745.95
+6,4.1,79,Follow-up Session,Pune,44,Low,Other,Female,Afternoon,4,1,Private,Basic,1,904.56
+16,4.2,43,Therapy Session,Aurangabad,71,Medium,Female,Other,Morning,1,1,Clinic Chain,Specialized,5,1705.74
+19,4.4,69,Initial Consultation,Nagpur,67,High,Female,Male,Morning,19,0,Private,Basic,7,1734.16
+28,4.1,68,Follow-up Session,Nagpur,52,Low,Male,Male,Evening,15,0,Government,Advanced,3,1020.73
+3,4.2,70,Post-surgical Rehab,Pune,69,Low,Male,Other,Morning,13,0,Clinic Chain,Basic,24,1422.11
+29,4.6,115,Therapy Session,Pune,38,Medium,Other,Other,Morning,13,0,Government,Advanced,11,1792.99
+4,3.6,55,Therapy Session,Aurangabad,42,Medium,Female,Male,Evening,0,0,Clinic Chain,Basic,27,972.73
+22,3.9,117,Follow-up Session,Nashik,45,High,Male,Other,Afternoon,2,1,Private,Specialized,14,2438.18
+6,4.6,119,Initial Consultation,Pune,64,Medium,Other,Male,Evening,6,1,Private,Basic,7,1562.62
+12,4.8,85,Post-surgical Rehab,Mumbai,32,High,Female,Other,Morning,14,0,Private,Basic,6,3246.26
+14,4.3,98,Initial Consultation,Nagpur,21,Low,Other,Other,Evening,18,0,Private,Specialized,13,1648.99
+10,4.3,53,Sports Injury Rehab,Mumbai,46,Low,Male,Female,Afternoon,19,0,Clinic Chain,Basic,22,1206.23
+28,3.7,55,Sports Injury Rehab,Nagpur,26,High,Male,Other,Evening,1,0,Government,Advanced,18,1985.73
+3,4.2,25,Follow-up Session,Nagpur,44,Medium,Female,Female,Morning,18,0,Private,Basic,13,499.78
+12,4.3,58,Follow-up Session,Pune,43,High,Other,Other,Morning,8,1,Clinic Chain,Basic,21,837.43
+6,3.9,61,Follow-up Session,Pune,36,Medium,Female,Male,Evening,18,1,Government,Basic,12,598.45
+26,3.9,77,Sports Injury Rehab,Mumbai,73,Low,Male,Male,Afternoon,4,1,Private,Specialized,28,1971.91
+18,4.1,31,Initial Consultation,Nagpur,45,Medium,Male,Other,Evening,17,0,Government,Basic,20,666.84
+21,3.5,22,Initial Consultation,Mumbai,34,High,Other,Other,Afternoon,15,0,Private,Basic,0,1344.56
+27,4.0,37,Follow-up Session,Nashik,60,High,Other,Male,Afternoon,3,1,Government,Advanced,26,814.88
+1,3.8,59,Post-surgical Rehab,Mumbai,74,Low,Other,Other,Evening,11,1,Government,Basic,18,1090.53
+9,4.0,40,Initial Consultation,Aurangabad,58,Medium,Female,Female,Afternoon,6,0,Private,Basic,28,797.95
+12,3.7,34,Sports Injury Rehab,Mumbai,59,Medium,Other,Female,Morning,13,1,Clinic Chain,Basic,27,1106.81
+29,4.8,116,Therapy Session,Aurangabad,67,Medium,Other,Female,Evening,11,1,Government,Basic,0,1708.72
+24,4.4,118,Therapy Session,Aurangabad,37,Low,Male,Female,Afternoon,2,0,Private,Advanced,3,2136.76
+20,4.5,45,Therapy Session,Aurangabad,62,Medium,Male,Female,Morning,4,1,Government,Advanced,9,1309.61
+5,4.7,27,Post-surgical Rehab,Nashik,57,High,Other,Other,Evening,16,1,Government,Specialized,2,2201.57
+27,4.2,119,Follow-up Session,Mumbai,56,Medium,Other,Other,Morning,9,1,Clinic Chain,Basic,26,1314.75
+27,3.6,113,Sports Injury Rehab,Mumbai,66,Low,Male,Female,Morning,9,0,Government,Specialized,19,1813.17
+11,4.3,106,Post-surgical Rehab,Nashik,70,Medium,Other,Other,Morning,10,1,Government,Specialized,8,2439.29
+11,4.4,61,Sports Injury Rehab,Nagpur,40,Medium,Female,Other,Afternoon,16,1,Private,Basic,2,1792.51
+19,4.6,63,Sports Injury Rehab,Pune,64,High,Female,Female,Evening,4,1,Private,Advanced,27,2267.92
+29,4.1,33,Follow-up Session,Mumbai,49,Medium,Female,Other,Evening,12,0,Clinic Chain,Advanced,5,1227.71
+29,3.7,97,Therapy Session,Pune,69,High,Other,Other,Afternoon,9,0,Government,Basic,5,1853.2
+10,3.9,21,Follow-up Session,Nashik,64,High,Male,Other,Evening,8,1,Government,Basic,22,449.25
+25,4.0,56,Post-surgical Rehab,Nagpur,50,Low,Other,Female,Morning,16,0,Government,Advanced,24,1506.89
+22,4.5,88,Post-surgical Rehab,Nagpur,74,High,Other,Other,Evening,0,1,Clinic Chain,Basic,11,3030.03
+27,4.4,57,Post-surgical Rehab,Nagpur,63,High,Male,Male,Afternoon,3,0,Government,Basic,22,2226.43
+24,4.0,60,Follow-up Session,Nashik,22,Low,Male,Male,Morning,3,0,Private,Basic,29,925.32
+6,5.0,81,Sports Injury Rehab,Aurangabad,60,High,Male,Female,Afternoon,17,1,Clinic Chain,Advanced,0,2382.23
+29,4.4,79,Sports Injury Rehab,Aurangabad,65,Low,Female,Male,Morning,8,1,Private,Specialized,15,2115.84
+0,3.9,33,Initial Consultation,Pune,51,Medium,Other,Female,Morning,17,1,Private,Specialized,23,538.15
+0,3.7,108,Post-surgical Rehab,Aurangabad,57,Low,Male,Male,Evening,13,0,Clinic Chain,Basic,4,1792.17
+24,3.7,103,Sports Injury Rehab,Aurangabad,28,High,Other,Male,Morning,14,1,Private,Advanced,8,2864.0
+26,3.9,21,Initial Consultation,Nagpur,67,Low,Female,Male,Afternoon,5,0,Government,Basic,9,802.71
+29,3.7,89,Sports Injury Rehab,Nagpur,20,High,Female,Female,Evening,9,0,Clinic Chain,Advanced,12,2870.03
+24,3.8,36,Post-surgical Rehab,Pune,50,Medium,Male,Female,Afternoon,14,1,Private,Basic,14,2003.99
+19,3.9,108,Therapy Session,Mumbai,28,Low,Male,Other,Morning,3,0,Government,Advanced,11,1360.04
+12,3.8,47,Post-surgical Rehab,Pune,33,Medium,Other,Female,Afternoon,17,1,Government,Advanced,4,1647.33
+8,4.8,85,Follow-up Session,Pune,35,High,Male,Male,Afternoon,17,0,Private,Specialized,4,2134.19
+2,3.6,54,Sports Injury Rehab,Nashik,47,High,Other,Male,Morning,16,1,Government,Basic,27,1046.03
+6,4.3,24,Sports Injury Rehab,Nashik,65,Medium,Male,Female,Evening,11,0,Clinic Chain,Specialized,27,1376.48
+5,4.1,84,Follow-up Session,Pune,72,Low,Other,Female,Afternoon,6,0,Private,Specialized,29,913.55
+7,5.0,59,Follow-up Session,Pune,27,Low,Other,Female,Morning,15,1,Government,Advanced,17,538.6
+26,3.7,95,Therapy Session,Pune,35,High,Other,Other,Evening,10,0,Government,Basic,11,1845.52
+8,4.1,75,Sports Injury Rehab,Aurangabad,55,Medium,Other,Male,Evening,13,1,Private,Advanced,26,1578.38
+29,5.0,55,Sports Injury Rehab,Nashik,36,Medium,Female,Other,Evening,2,0,Private,Advanced,2,2670.53
+4,4.8,64,Therapy Session,Pune,53,Low,Other,Other,Afternoon,18,0,Private,Advanced,25,1172.73
+0,4.7,42,Initial Consultation,Nagpur,30,Low,Male,Male,Afternoon,17,0,Private,Basic,24,565.95
+18,3.9,66,Therapy Session,Nagpur,73,Low,Female,Male,Afternoon,9,1,Clinic Chain,Basic,6,1220.77
+9,3.8,50,Post-surgical Rehab,Aurangabad,63,Medium,Female,Female,Evening,5,1,Private,Advanced,16,2043.54
+11,4.5,30,Sports Injury Rehab,Aurangabad,20,Low,Other,Female,Afternoon,12,1,Clinic Chain,Basic,18,1059.86
+23,4.9,29,Follow-up Session,Mumbai,27,Low,Female,Other,Morning,9,1,Clinic Chain,Advanced,27,703.25
+14,4.3,86,Post-surgical Rehab,Mumbai,55,High,Other,Female,Afternoon,17,1,Private,Basic,17,2797.14
+26,4.4,33,Sports Injury Rehab,Mumbai,18,Low,Male,Female,Afternoon,19,0,Clinic Chain,Basic,0,1519.3
+21,3.9,99,Therapy Session,Aurangabad,72,Low,Other,Male,Evening,15,0,Private,Specialized,24,1908.33
+23,4.7,93,Post-surgical Rehab,Aurangabad,73,Medium,Female,Male,Afternoon,5,1,Private,Advanced,23,2724.37
+8,3.8,112,Sports Injury Rehab,Aurangabad,44,Medium,Male,Female,Morning,12,0,Government,Specialized,4,2093.1
+19,4.0,29,Initial Consultation,Nagpur,63,High,Other,Male,Evening,3,0,Private,Specialized,26,1501.19
+16,4.1,95,Initial Consultation,Aurangabad,25,Low,Male,Female,Morning,13,0,Government,Advanced,27,851.51
+29,4.3,113,Follow-up Session,Nagpur,68,High,Male,Male,Evening,0,0,Clinic Chain,Advanced,1,2531.14
+16,3.9,20,Sports Injury Rehab,Mumbai,63,Medium,Female,Male,Evening,19,1,Government,Basic,0,1125.0
+25,3.7,24,Initial Consultation,Mumbai,59,High,Male,Male,Afternoon,4,0,Clinic Chain,Advanced,6,1573.94
+19,4.4,39,Therapy Session,Mumbai,34,Medium,Female,Male,Morning,7,1,Private,Specialized,28,1517.89
+11,3.9,27,Sports Injury Rehab,Pune,26,High,Male,Female,Evening,11,1,Clinic Chain,Specialized,10,2054.87
+29,4.4,62,Therapy Session,Pune,23,High,Other,Other,Afternoon,1,0,Clinic Chain,Advanced,10,2538.21
+6,3.7,95,Therapy Session,Nashik,60,Low,Male,Male,Evening,11,1,Private,Specialized,17,1443.12
+1,4.2,20,Initial Consultation,Nashik,42,High,Other,Female,Evening,4,0,Clinic Chain,Basic,16,849.91
+2,4.3,76,Sports Injury Rehab,Nashik,56,Low,Other,Female,Evening,4,0,Private,Specialized,1,2100.86
+16,3.6,83,Post-surgical Rehab,Pune,66,Low,Male,Male,Evening,12,0,Government,Basic,6,1404.23
+4,4.0,103,Initial Consultation,Pune,45,Low,Other,Other,Evening,8,1,Private,Specialized,6,1414.61
+16,3.7,47,Initial Consultation,Nashik,50,Low,Male,Male,Evening,9,1,Private,Basic,9,807.58
+23,3.6,56,Sports Injury Rehab,Nashik,71,High,Male,Female,Afternoon,0,1,Clinic Chain,Basic,21,1904.06
+16,5.0,66,Sports Injury Rehab,Aurangabad,54,Medium,Other,Other,Evening,2,0,Government,Advanced,20,1616.74
+26,4.0,95,Therapy Session,Nashik,26,Medium,Other,Female,Morning,17,0,Private,Basic,2,2081.35
+16,4.7,56,Sports Injury Rehab,Aurangabad,35,Medium,Female,Male,Afternoon,11,0,Government,Advanced,29,1336.13
+1,3.9,68,Therapy Session,Nagpur,73,High,Other,Other,Morning,2,1,Government,Specialized,11,1510.11
+1,4.5,63,Initial Consultation,Pune,38,Low,Female,Female,Evening,8,0,Clinic Chain,Specialized,2,1274.84
+27,4.6,75,Follow-up Session,Nashik,19,Medium,Other,Female,Morning,1,0,Private,Specialized,10,2026.24
+21,4.4,47,Post-surgical Rehab,Pune,60,High,Male,Female,Evening,2,1,Clinic Chain,Basic,28,2196.63
+22,4.2,98,Initial Consultation,Pune,55,Low,Other,Male,Evening,13,1,Private,Specialized,11,1644.29
+4,4.1,25,Sports Injury Rehab,Pune,57,Medium,Male,Other,Afternoon,3,1,Government,Specialized,24,1145.85
+0,4.0,80,Post-surgical Rehab,Nagpur,53,Low,Male,Male,Afternoon,18,0,Private,Advanced,3,2054.06
+0,4.9,39,Follow-up Session,Mumbai,67,Medium,Male,Male,Evening,12,0,Private,Advanced,24,697.81
+18,4.7,97,Follow-up Session,Nashik,60,Medium,Female,Male,Afternoon,6,0,Government,Specialized,15,1524.1
+29,4.9,21,Therapy Session,Mumbai,54,Medium,Other,Other,Morning,11,1,Government,Specialized,19,1385.09
+1,3.7,92,Post-surgical Rehab,Mumbai,32,Low,Male,Male,Afternoon,2,1,Private,Basic,17,1677.85
+20,4.6,56,Therapy Session,Mumbai,45,High,Male,Male,Afternoon,8,1,Clinic Chain,Basic,3,1926.38
+11,4.9,39,Initial Consultation,Pune,35,Low,Female,Male,Morning,1,1,Private,Specialized,21,1031.64
+25,3.8,45,Post-surgical Rehab,Aurangabad,51,Medium,Other,Male,Afternoon,8,0,Government,Advanced,5,1973.68
+5,3.6,48,Initial Consultation,Pune,39,Low,Other,Female,Evening,11,0,Clinic Chain,Specialized,20,850.36
+22,4.6,20,Therapy Session,Pune,28,High,Female,Male,Morning,11,0,Government,Basic,14,1314.04
+3,4.4,54,Post-surgical Rehab,Mumbai,74,Low,Female,Female,Evening,14,0,Government,Advanced,0,1485.73
+22,4.8,89,Therapy Session,Pune,30,High,Other,Male,Morning,1,0,Clinic Chain,Advanced,2,2618.33
+10,3.7,78,Post-surgical Rehab,Mumbai,21,High,Female,Other,Evening,17,0,Government,Basic,4,2126.83
+23,4.7,88,Therapy Session,Aurangabad,39,Low,Other,Female,Evening,12,0,Government,Specialized,21,1415.45
+26,3.8,52,Follow-up Session,Nashik,24,Medium,Other,Female,Afternoon,13,0,Government,Specialized,29,906.37
+16,3.7,70,Therapy Session,Mumbai,60,High,Male,Female,Evening,4,1,Government,Specialized,16,1660.73
+5,3.7,97,Follow-up Session,Aurangabad,71,Low,Male,Female,Afternoon,9,1,Government,Basic,29,507.43
+23,4.7,31,Therapy Session,Nashik,41,High,Other,Other,Morning,11,0,Government,Advanced,13,1638.43
+4,4.5,39,Post-surgical Rehab,Nagpur,21,Medium,Other,Male,Evening,9,1,Government,Basic,8,1421.88
+19,4.3,72,Post-surgical Rehab,Mumbai,45,Low,Other,Female,Evening,10,0,Government,Specialized,29,1738.56
+1,4.0,107,Post-surgical Rehab,Mumbai,32,Low,Other,Other,Morning,1,0,Government,Basic,2,1609.12
+5,4.8,62,Sports Injury Rehab,Nagpur,18,Low,Other,Female,Morning,4,1,Private,Advanced,25,1454.27
+21,4.1,117,Initial Consultation,Nagpur,72,Medium,Other,Male,Evening,6,0,Private,Basic,12,1874.8
+10,4.7,108,Post-surgical Rehab,Mumbai,20,High,Female,Female,Morning,5,0,Government,Specialized,2,3325.62
+15,4.2,69,Follow-up Session,Nagpur,31,Low,Other,Other,Afternoon,2,0,Private,Advanced,10,1096.04
+15,4.1,48,Post-surgical Rehab,Pune,55,High,Female,Male,Morning,12,0,Clinic Chain,Basic,1,2571.52
+0,4.2,76,Sports Injury Rehab,Nashik,67,High,Female,Other,Morning,2,0,Private,Basic,23,1941.15
+8,4.0,58,Follow-up Session,Nashik,74,Medium,Other,Male,Evening,5,0,Government,Advanced,14,809.73
+27,4.6,114,Sports Injury Rehab,Nashik,18,Low,Other,Male,Afternoon,10,0,Government,Advanced,12,1688.83
+26,4.3,75,Follow-up Session,Pune,55,High,Female,Male,Morning,16,1,Private,Specialized,18,1846.45
+5,3.8,62,Therapy Session,Nagpur,55,Low,Female,Female,Afternoon,9,1,Government,Advanced,21,789.51
+15,4.8,69,Initial Consultation,Aurangabad,38,Low,Other,Other,Afternoon,11,0,Clinic Chain,Specialized,15,1385.0
+28,4.1,42,Initial Consultation,Nagpur,65,Medium,Other,Other,Afternoon,16,1,Clinic Chain,Basic,17,912.68
+2,4.3,63,Sports Injury Rehab,Mumbai,46,Low,Female,Other,Evening,3,0,Government,Specialized,6,1504.57
+19,4.9,57,Initial Consultation,Nashik,22,Low,Female,Male,Morning,1,0,Clinic Chain,Basic,12,1156.1
+27,4.4,103,Sports Injury Rehab,Nagpur,66,High,Female,Female,Evening,10,0,Clinic Chain,Advanced,3,3200.85
+26,3.7,42,Sports Injury Rehab,Aurangabad,27,Medium,Male,Male,Morning,6,0,Private,Basic,8,1889.56
+3,4.9,64,Sports Injury Rehab,Mumbai,45,Low,Female,Other,Morning,1,1,Clinic Chain,Advanced,29,1201.84
+18,4.4,71,Initial Consultation,Pune,38,High,Male,Female,Evening,17,1,Private,Basic,9,1496.16
+25,4.0,99,Sports Injury Rehab,Pune,67,Medium,Other,Female,Afternoon,3,1,Government,Basic,8,1717.35
+2,3.7,69,Initial Consultation,Aurangabad,24,Medium,Other,Female,Afternoon,7,1,Private,Basic,6,949.41
+18,4.7,27,Sports Injury Rehab,Mumbai,20,High,Female,Other,Morning,19,0,Government,Basic,14,1490.07
+19,4.4,104,Post-surgical Rehab,Nashik,62,High,Other,Female,Evening,13,1,Government,Specialized,27,2769.06
+6,4.3,20,Sports Injury Rehab,Nagpur,64,High,Other,Female,Afternoon,11,0,Government,Basic,7,1476.47
+19,4.8,27,Follow-up Session,Mumbai,37,High,Other,Male,Afternoon,17,0,Government,Specialized,18,1068.7
+8,4.7,48,Sports Injury Rehab,Pune,36,High,Other,Male,Morning,10,1,Government,Advanced,10,1689.52
+0,3.7,115,Therapy Session,Aurangabad,52,Low,Male,Female,Morning,7,0,Private,Advanced,4,1609.2
+7,4.0,24,Sports Injury Rehab,Aurangabad,21,Low,Male,Female,Evening,1,1,Government,Specialized,1,1174.17
+6,3.9,105,Follow-up Session,Nagpur,22,Medium,Female,Male,Morning,14,1,Clinic Chain,Advanced,9,1077.68
+17,4.6,66,Follow-up Session,Aurangabad,18,Low,Female,Male,Afternoon,8,1,Clinic Chain,Advanced,15,880.9
+7,3.6,53,Initial Consultation,Aurangabad,21,Low,Female,Male,Afternoon,18,1,Government,Basic,22,400.38
+0,4.4,84,Post-surgical Rehab,Mumbai,29,Low,Other,Other,Afternoon,19,1,Clinic Chain,Basic,12,1564.59
+10,4.6,74,Sports Injury Rehab,Nashik,44,High,Other,Other,Afternoon,7,0,Private,Basic,7,2487.45
+27,4.8,109,Initial Consultation,Nagpur,73,Medium,Male,Male,Evening,18,1,Private,Specialized,8,2275.27
+24,4.0,62,Post-surgical Rehab,Mumbai,59,Medium,Male,Female,Evening,4,1,Government,Specialized,10,2241.65
+24,4.7,93,Sports Injury Rehab,Nashik,40,Medium,Female,Male,Morning,10,0,Government,Advanced,10,1868.42
+17,3.7,49,Therapy Session,Mumbai,42,Medium,Male,Other,Morning,14,1,Government,Basic,22,777.44
+22,4.8,101,Sports Injury Rehab,Mumbai,38,Low,Male,Female,Morning,7,1,Clinic Chain,Specialized,25,2071.42
+29,3.7,36,Follow-up Session,Aurangabad,69,Low,Male,Other,Evening,18,0,Clinic Chain,Specialized,15,986.0
+9,4.1,45,Follow-up Session,Nashik,41,High,Male,Female,Afternoon,7,0,Private,Basic,9,1180.39
+2,4.7,27,Therapy Session,Nagpur,42,Medium,Male,Other,Morning,18,1,Clinic Chain,Specialized,28,840.11
+6,3.7,66,Initial Consultation,Nagpur,62,Low,Female,Female,Afternoon,17,0,Private,Basic,23,712.56
+27,3.8,95,Post-surgical Rehab,Nashik,72,Low,Female,Female,Morning,9,1,Clinic Chain,Advanced,11,2165.09
+15,4.6,110,Sports Injury Rehab,Aurangabad,63,High,Male,Female,Morning,6,0,Private,Advanced,24,2886.26
+25,4.6,91,Follow-up Session,Pune,49,High,Female,Female,Morning,8,1,Government,Advanced,5,1605.41
+15,4.5,108,Initial Consultation,Mumbai,72,High,Other,Other,Morning,0,1,Clinic Chain,Basic,27,1638.41
+24,4.5,65,Therapy Session,Aurangabad,49,Low,Male,Other,Morning,18,1,Private,Specialized,11,1695.3
+19,4.3,87,Follow-up Session,Nashik,22,Low,Other,Female,Afternoon,4,0,Clinic Chain,Advanced,9,1227.96
+27,3.9,52,Therapy Session,Mumbai,53,High,Female,Female,Morning,18,1,Government,Advanced,17,1463.59
+16,4.0,20,Sports Injury Rehab,Nagpur,63,Medium,Female,Other,Afternoon,0,0,Private,Advanced,17,1772.91
+1,3.8,38,Post-surgical Rehab,Pune,59,High,Other,Female,Evening,14,1,Clinic Chain,Specialized,3,2580.52
+0,4.9,50,Follow-up Session,Nagpur,66,High,Female,Female,Morning,15,1,Clinic Chain,Specialized,8,1062.53
+15,4.4,99,Follow-up Session,Nashik,59,High,Male,Female,Afternoon,6,1,Government,Basic,6,1316.22
+29,4.1,33,Sports Injury Rehab,Mumbai,56,High,Other,Male,Evening,11,1,Government,Advanced,17,1699.59
+11,4.2,72,Initial Consultation,Nashik,33,Low,Male,Female,Evening,7,1,Private,Specialized,7,1371.93
+4,4.9,67,Post-surgical Rehab,Mumbai,50,Medium,Other,Male,Evening,4,0,Clinic Chain,Basic,10,2143.34
+4,3.7,88,Follow-up Session,Aurangabad,66,High,Female,Female,Afternoon,9,0,Clinic Chain,Advanced,6,1455.75
+26,4.4,109,Post-surgical Rehab,Pune,38,Medium,Other,Other,Morning,4,0,Government,Specialized,8,2926.45
+22,4.3,81,Follow-up Session,Aurangabad,26,Medium,Other,Male,Morning,16,1,Government,Specialized,7,1228.15
+8,4.4,111,Post-surgical Rehab,Aurangabad,23,Medium,Male,Male,Afternoon,4,1,Private,Basic,2,2604.02
+8,3.5,85,Therapy Session,Nashik,68,High,Female,Female,Morning,14,0,Clinic Chain,Advanced,16,1737.88
+2,4.8,83,Follow-up Session,Pune,62,Low,Male,Female,Afternoon,12,1,Clinic Chain,Advanced,1,964.68
+18,4.9,89,Post-surgical Rehab,Mumbai,52,High,Female,Male,Morning,0,1,Private,Specialized,14,4047.68
+15,4.3,82,Initial Consultation,Mumbai,56,Medium,Male,Other,Evening,10,1,Private,Advanced,13,1353.97
+15,4.5,92,Therapy Session,Nagpur,39,Medium,Other,Other,Morning,0,0,Government,Basic,28,1338.27
+2,4.9,52,Therapy Session,Mumbai,58,Low,Male,Female,Afternoon,10,0,Government,Specialized,17,966.45
+19,4.6,60,Initial Consultation,Nashik,71,High,Female,Other,Afternoon,17,0,Private,Specialized,15,2102.19
+23,3.7,108,Post-surgical Rehab,Aurangabad,22,Medium,Female,Other,Evening,17,0,Private,Basic,19,2577.2
+21,4.4,67,Sports Injury Rehab,Aurangabad,59,Low,Other,Female,Afternoon,15,0,Clinic Chain,Specialized,21,1958.63
+23,4.4,32,Initial Consultation,Aurangabad,40,Medium,Female,Other,Morning,12,1,Private,Advanced,3,1333.08
+0,4.1,92,Post-surgical Rehab,Pune,34,Low,Male,Female,Morning,6,1,Private,Advanced,24,1793.71
+23,4.6,96,Initial Consultation,Mumbai,29,Low,Other,Male,Evening,0,1,Clinic Chain,Specialized,19,1540.66
+19,4.9,50,Initial Consultation,Nashik,40,High,Female,Female,Afternoon,15,1,Private,Basic,5,1660.26
+10,4.9,94,Follow-up Session,Pune,33,Medium,Female,Male,Evening,0,0,Government,Basic,5,1187.99
+16,4.2,87,Post-surgical Rehab,Nagpur,20,High,Male,Male,Morning,16,0,Government,Advanced,25,2298.24
+7,3.7,117,Sports Injury Rehab,Nashik,47,Medium,Male,Other,Evening,5,1,Clinic Chain,Basic,10,1856.26
+3,5.0,23,Follow-up Session,Nashik,74,High,Other,Other,Afternoon,1,0,Private,Specialized,25,1020.53
+5,4.8,38,Initial Consultation,Nashik,39,Medium,Female,Other,Evening,16,1,Government,Specialized,16,678.24
+7,3.7,89,Initial Consultation,Aurangabad,26,High,Male,Female,Afternoon,5,1,Government,Advanced,23,950.82
+19,4.9,117,Initial Consultation,Nashik,46,Low,Other,Other,Afternoon,13,1,Government,Advanced,27,997.77
+29,4.8,101,Post-surgical Rehab,Mumbai,64,Medium,Female,Male,Morning,17,1,Government,Advanced,2,2355.02
+2,4.3,32,Post-surgical Rehab,Nashik,54,Medium,Female,Other,Morning,5,0,Private,Basic,12,1947.14
+15,4.4,42,Follow-up Session,Aurangabad,40,Low,Other,Other,Morning,9,1,Private,Specialized,21,851.04
+29,4.1,102,Sports Injury Rehab,Nashik,30,High,Other,Female,Afternoon,17,0,Private,Specialized,2,4012.41
+24,3.6,94,Follow-up Session,Nagpur,49,Medium,Male,Female,Evening,8,1,Private,Specialized,15,1694.19
+2,4.0,20,Therapy Session,Nagpur,63,Medium,Female,Male,Afternoon,7,1,Government,Advanced,14,712.25
+24,4.7,107,Initial Consultation,Aurangabad,69,High,Female,Female,Morning,9,1,Clinic Chain,Specialized,10,2505.19
+28,3.5,73,Initial Consultation,Mumbai,64,Low,Female,Other,Morning,16,1,Clinic Chain,Basic,17,860.68
+17,4.0,90,Initial Consultation,Mumbai,65,High,Other,Female,Evening,5,0,Government,Basic,14,1466.58
+13,4.1,108,Follow-up Session,Pune,40,High,Male,Male,Morning,13,1,Government,Specialized,4,1556.74
+17,4.3,104,Follow-up Session,Aurangabad,62,High,Female,Other,Morning,5,0,Clinic Chain,Advanced,15,1857.6
+1,4.9,34,Initial Consultation,Nashik,34,Medium,Other,Male,Morning,6,1,Clinic Chain,Specialized,29,838.92
+21,4.0,84,Follow-up Session,Aurangabad,72,Low,Female,Female,Evening,11,1,Government,Basic,15,758.26
+2,4.0,95,Post-surgical Rehab,Pune,57,Low,Male,Female,Afternoon,2,1,Government,Basic,16,1320.67
+15,4.6,90,Post-surgical Rehab,Aurangabad,38,High,Female,Male,Morning,13,0,Private,Basic,8,3146.78
+28,4.2,34,Follow-up Session,Aurangabad,19,Medium,Male,Other,Evening,18,1,Private,Specialized,26,1065.54
+8,3.8,40,Initial Consultation,Pune,54,High,Male,Female,Morning,15,1,Clinic Chain,Basic,22,771.84
+3,4.2,38,Follow-up Session,Mumbai,23,Medium,Female,Female,Evening,6,1,Government,Advanced,2,682.89
+0,3.7,79,Follow-up Session,Nashik,61,Medium,Female,Other,Morning,7,1,Clinic Chain,Specialized,19,840.81
+3,3.8,112,Follow-up Session,Pune,35,Medium,Male,Female,Evening,17,1,Private,Specialized,12,1378.31
+0,4.2,108,Therapy Session,Nagpur,47,Medium,Other,Male,Morning,12,0,Private,Basic,21,1490.17
+13,4.1,52,Post-surgical Rehab,Mumbai,39,Low,Male,Female,Afternoon,8,0,Clinic Chain,Basic,2,1728.94
+20,4.9,68,Sports Injury Rehab,Nagpur,71,Medium,Female,Female,Morning,9,1,Private,Advanced,27,1956.54
+15,4.0,115,Sports Injury Rehab,Mumbai,50,Medium,Female,Other,Evening,8,1,Government,Specialized,6,2110.49
+19,4.4,54,Therapy Session,Nashik,47,High,Other,Male,Morning,14,0,Clinic Chain,Basic,28,1573.8
+23,4.4,63,Follow-up Session,Nashik,34,High,Male,Other,Afternoon,19,1,Government,Advanced,5,1235.4
+7,3.5,109,Therapy Session,Aurangabad,60,Low,Male,Female,Morning,1,0,Government,Basic,8,1142.69
+6,4.5,30,Therapy Session,Nagpur,49,High,Male,Female,Evening,12,1,Private,Specialized,11,1758.96
+2,3.8,118,Initial Consultation,Mumbai,59,Medium,Female,Other,Evening,1,1,Government,Basic,14,966.29
+16,4.9,91,Post-surgical Rehab,Nashik,68,High,Male,Other,Afternoon,18,0,Clinic Chain,Specialized,20,3641.56
+0,3.7,97,Sports Injury Rehab,Pune,31,Low,Other,Other,Evening,1,1,Government,Basic,19,1147.04
+15,4.1,93,Follow-up Session,Nashik,27,High,Female,Male,Morning,2,0,Government,Specialized,2,1926.75
+11,3.6,85,Sports Injury Rehab,Pune,64,High,Female,Female,Morning,5,0,Government,Advanced,9,2137.02
+26,5.0,65,Sports Injury Rehab,Mumbai,68,Low,Male,Other,Morning,2,0,Government,Specialized,0,1961.68
+18,4.3,28,Post-surgical Rehab,Nashik,53,Low,Other,Female,Evening,9,1,Government,Advanced,18,1282.44
+21,4.4,22,Sports Injury Rehab,Nashik,51,Medium,Female,Male,Morning,5,0,Private,Specialized,18,2093.47
+22,3.6,104,Sports Injury Rehab,Mumbai,26,High,Female,Male,Morning,15,0,Clinic Chain,Advanced,22,2619.35
+21,4.6,45,Therapy Session,Nashik,59,Medium,Male,Male,Morning,16,1,Private,Basic,22,1232.02
+13,3.8,91,Post-surgical Rehab,Pune,45,High,Male,Male,Afternoon,18,1,Clinic Chain,Specialized,12,3374.47
+29,4.8,67,Initial Consultation,Nashik,28,High,Other,Female,Evening,2,1,Clinic Chain,Basic,11,1752.64
+5,3.8,85,Follow-up Session,Nagpur,31,Medium,Male,Male,Evening,17,1,Clinic Chain,Advanced,0,1104.29
+5,3.8,89,Sports Injury Rehab,Aurangabad,56,High,Other,Male,Evening,6,1,Clinic Chain,Specialized,18,2333.57
+12,3.6,47,Follow-up Session,Pune,72,High,Female,Other,Afternoon,8,1,Clinic Chain,Specialized,28,769.41
+18,4.2,112,Initial Consultation,Nagpur,64,High,Other,Male,Evening,19,0,Government,Basic,23,1379.45
+21,4.3,45,Follow-up Session,Mumbai,71,Low,Other,Other,Afternoon,11,1,Private,Specialized,15,987.25
+7,3.6,44,Initial Consultation,Pune,36,Medium,Other,Male,Afternoon,4,0,Private,Specialized,24,1028.62
+26,4.7,31,Therapy Session,Aurangabad,71,Low,Female,Male,Evening,2,1,Government,Basic,22,853.07
+26,4.2,24,Sports Injury Rehab,Aurangabad,32,Medium,Male,Other,Morning,10,0,Clinic Chain,Specialized,22,1982.86
+1,4.3,117,Initial Consultation,Mumbai,45,Medium,Female,Male,Morning,3,0,Private,Basic,27,1180.14
+20,4.2,67,Follow-up Session,Mumbai,41,High,Male,Female,Evening,4,1,Government,Basic,14,1031.6
+29,4.1,56,Sports Injury Rehab,Pune,25,Medium,Other,Female,Evening,0,1,Government,Basic,15,1507.77
+0,4.3,98,Therapy Session,Nashik,60,Low,Other,Male,Afternoon,17,0,Private,Basic,10,1330.12
+27,3.7,63,Sports Injury Rehab,Mumbai,26,Low,Other,Female,Evening,11,1,Private,Basic,23,1472.36
+14,3.8,119,Initial Consultation,Nashik,64,Low,Other,Other,Afternoon,12,1,Clinic Chain,Advanced,5,1348.37
+0,4.8,34,Therapy Session,Nagpur,50,Medium,Other,Male,Evening,8,0,Clinic Chain,Advanced,10,1194.54
+4,4.9,62,Follow-up Session,Aurangabad,50,Low,Male,Male,Morning,1,0,Private,Basic,2,1080.64
+27,4.1,67,Therapy Session,Nashik,36,Medium,Male,Other,Morning,4,0,Clinic Chain,Advanced,14,1833.08
+28,3.9,106,Therapy Session,Aurangabad,20,Low,Other,Other,Evening,12,1,Government,Advanced,0,1544.94
+15,4.5,89,Post-surgical Rehab,Nashik,27,Low,Female,Other,Afternoon,15,1,Clinic Chain,Specialized,6,2456.81
+18,4.1,65,Therapy Session,Nagpur,57,Medium,Female,Male,Morning,15,1,Clinic Chain,Basic,0,1512.49
+3,3.5,62,Therapy Session,Mumbai,64,Low,Other,Other,Afternoon,2,1,Government,Advanced,16,801.71
+2,3.7,40,Sports Injury Rehab,Nagpur,59,High,Male,Other,Evening,3,0,Clinic Chain,Specialized,8,2273.55
+16,4.6,42,Follow-up Session,Mumbai,18,Medium,Female,Female,Evening,10,1,Government,Specialized,28,698.82
+16,4.5,99,Sports Injury Rehab,Mumbai,46,Medium,Female,Female,Morning,13,0,Clinic Chain,Basic,25,1797.73
+11,3.5,66,Sports Injury Rehab,Aurangabad,67,Medium,Female,Male,Evening,2,1,Private,Basic,22,1512.85
+27,3.8,34,Initial Consultation,Nagpur,51,High,Other,Female,Morning,15,1,Clinic Chain,Specialized,12,1611.13
+29,3.8,44,Sports Injury Rehab,Nashik,68,Medium,Female,Female,Afternoon,14,0,Private,Basic,10,1965.34
+28,4.5,55,Post-surgical Rehab,Nagpur,30,Low,Female,Other,Morning,9,1,Private,Basic,28,1830.16
+13,3.5,94,Post-surgical Rehab,Aurangabad,71,Low,Female,Other,Morning,8,1,Private,Specialized,19,2409.16
+20,3.7,70,Initial Consultation,Mumbai,18,Low,Female,Female,Afternoon,10,0,Private,Specialized,5,1631.74
+5,4.7,34,Follow-up Session,Aurangabad,51,Medium,Male,Female,Morning,15,1,Private,Basic,0,859.43
+2,3.8,87,Follow-up Session,Pune,46,Low,Other,Female,Morning,9,0,Government,Advanced,6,718.98
+27,4.5,40,Sports Injury Rehab,Pune,65,Medium,Other,Male,Evening,16,0,Government,Basic,11,1383.56
+8,3.9,32,Sports Injury Rehab,Nashik,64,Low,Male,Male,Afternoon,18,0,Government,Advanced,21,874.63
+4,3.6,105,Sports Injury Rehab,Aurangabad,30,High,Male,Male,Morning,1,0,Private,Specialized,19,3016.26
+23,3.9,38,Follow-up Session,Nashik,65,High,Other,Female,Afternoon,1,1,Clinic Chain,Advanced,22,1124.42
+28,4.6,53,Therapy Session,Nashik,66,High,Female,Female,Afternoon,5,1,Government,Specialized,18,1802.04
+16,4.8,97,Post-surgical Rehab,Pune,70,High,Female,Male,Morning,18,1,Clinic Chain,Basic,16,2682.39
+13,4.7,87,Therapy Session,Nashik,46,Medium,Other,Male,Evening,7,0,Clinic Chain,Basic,3,1767.01
+20,4.1,71,Therapy Session,Pune,56,Low,Female,Female,Afternoon,2,1,Private,Specialized,2,1861.16
+2,4.5,46,Follow-up Session,Mumbai,41,High,Male,Other,Morning,13,1,Private,Specialized,0,1338.35
+27,3.8,48,Therapy Session,Aurangabad,43,Medium,Female,Male,Afternoon,15,1,Private,Specialized,17,1751.57
+0,3.9,47,Initial Consultation,Nashik,34,High,Female,Female,Evening,0,1,Government,Basic,26,512.96
+19,4.8,54,Sports Injury Rehab,Pune,24,High,Female,Female,Evening,2,0,Private,Basic,20,2333.78
+28,3.5,27,Initial Consultation,Nagpur,30,Medium,Other,Other,Evening,17,0,Government,Advanced,14,954.41
+20,3.6,35,Post-surgical Rehab,Nashik,22,Medium,Male,Female,Morning,8,1,Government,Specialized,7,2017.38
+22,3.8,55,Sports Injury Rehab,Mumbai,43,Low,Female,Female,Morning,5,0,Government,Advanced,0,1467.76
+0,3.5,49,Therapy Session,Mumbai,66,Low,Other,Male,Evening,0,1,Government,Basic,19,587.79
+2,3.8,37,Post-surgical Rehab,Nagpur,20,High,Female,Male,Morning,9,1,Private,Advanced,13,2355.28
+17,4.4,21,Sports Injury Rehab,Pune,24,High,Male,Other,Evening,5,1,Government,Advanced,3,1741.23
+24,4.1,68,Therapy Session,Nashik,66,Low,Female,Other,Morning,11,0,Private,Basic,4,1581.53
+9,4.8,96,Initial Consultation,Pune,56,Low,Male,Female,Evening,3,1,Private,Basic,22,1026.89
+21,4.7,23,Sports Injury Rehab,Mumbai,70,Medium,Female,Male,Afternoon,12,0,Government,Specialized,12,1672.53
+25,4.0,109,Therapy Session,Pune,18,Low,Male,Other,Evening,16,0,Private,Advanced,27,1696.31
+2,3.9,108,Initial Consultation,Mumbai,66,Low,Female,Other,Evening,7,1,Clinic Chain,Basic,23,787.06
+7,4.1,113,Post-surgical Rehab,Pune,34,High,Male,Other,Morning,19,0,Private,Basic,14,2948.77
+13,4.4,94,Post-surgical Rehab,Nagpur,60,Low,Female,Female,Morning,2,0,Private,Advanced,5,2423.12
+23,3.9,26,Post-surgical Rehab,Aurangabad,42,High,Female,Male,Morning,11,1,Government,Basic,0,2090.82
+17,4.4,114,Post-surgical Rehab,Nagpur,20,Low,Other,Other,Morning,6,0,Government,Specialized,22,2095.63
+14,4.1,93,Follow-up Session,Nagpur,32,Medium,Other,Male,Morning,11,0,Private,Specialized,18,1622.56
+21,4.3,58,Sports Injury Rehab,Aurangabad,46,Low,Male,Other,Morning,1,1,Government,Advanced,12,1253.25
+22,4.2,32,Sports Injury Rehab,Aurangabad,70,Low,Female,Other,Afternoon,13,1,Clinic Chain,Specialized,28,1395.24
+1,3.9,50,Follow-up Session,Nashik,60,Low,Male,Male,Evening,4,0,Clinic Chain,Basic,28,469.04
+26,4.9,90,Therapy Session,Nashik,49,High,Other,Male,Evening,8,1,Government,Basic,5,1831.64
+9,4.6,82,Therapy Session,Nagpur,43,Medium,Male,Male,Evening,10,1,Private,Basic,14,1508.12
+1,3.7,75,Post-surgical Rehab,Nagpur,33,Low,Male,Female,Afternoon,4,0,Clinic Chain,Basic,15,1496.57
+25,4.8,61,Initial Consultation,Mumbai,42,High,Other,Other,Evening,2,0,Clinic Chain,Advanced,23,1778.22
+16,4.2,80,Therapy Session,Mumbai,71,Medium,Female,Female,Afternoon,16,1,Private,Specialized,22,1800.29
+7,4.8,61,Initial Consultation,Nashik,45,High,Male,Male,Afternoon,1,0,Government,Specialized,15,1608.66
+0,4.7,75,Sports Injury Rehab,Nashik,26,High,Other,Other,Afternoon,0,1,Clinic Chain,Basic,9,2004.15
+8,4.1,55,Initial Consultation,Mumbai,73,Medium,Female,Female,Evening,6,1,Private,Advanced,21,897.79
+10,3.5,103,Sports Injury Rehab,Mumbai,73,Low,Other,Other,Afternoon,13,0,Private,Basic,8,1652.14
+21,3.9,87,Follow-up Session,Pune,18,High,Male,Female,Evening,4,0,Clinic Chain,Basic,8,1740.76
+15,4.3,26,Follow-up Session,Pune,46,High,Female,Male,Evening,18,1,Government,Advanced,16,615.72
+6,4.5,73,Post-surgical Rehab,Mumbai,74,Low,Female,Female,Morning,10,1,Clinic Chain,Advanced,16,1781.52
+28,3.9,20,Therapy Session,Pune,39,Low,Other,Other,Morning,1,1,Private,Basic,16,1067.05
+9,3.7,63,Post-surgical Rehab,Aurangabad,33,Medium,Other,Other,Afternoon,7,1,Clinic Chain,Specialized,23,2147.28
+22,4.8,64,Sports Injury Rehab,Nashik,58,Medium,Other,Other,Afternoon,8,0,Government,Basic,11,1556.57
+25,5.0,66,Post-surgical Rehab,Nashik,68,Medium,Female,Other,Evening,2,1,Private,Specialized,12,3195.19
+2,4.3,32,Initial Consultation,Mumbai,61,Low,Female,Male,Afternoon,1,0,Government,Specialized,29,440.1
+17,3.8,41,Sports Injury Rehab,Nagpur,68,High,Male,Female,Afternoon,6,0,Clinic Chain,Advanced,11,2172.06
+24,3.9,40,Follow-up Session,Mumbai,71,High,Female,Male,Evening,4,1,Clinic Chain,Advanced,13,1227.21
+23,3.5,105,Therapy Session,Pune,58,Medium,Male,Male,Afternoon,4,0,Government,Basic,9,1515.1
+12,4.9,111,Sports Injury Rehab,Nagpur,24,Low,Other,Male,Afternoon,19,0,Clinic Chain,Specialized,22,2031.95
+27,3.7,28,Sports Injury Rehab,Pune,31,High,Other,Other,Evening,12,1,Government,Specialized,18,1948.68
+25,4.4,45,Initial Consultation,Aurangabad,46,Medium,Female,Other,Evening,19,0,Clinic Chain,Basic,28,985.22
+6,3.9,28,Therapy Session,Pune,36,High,Other,Other,Morning,5,0,Government,Basic,1,1169.13
+24,4.3,34,Follow-up Session,Aurangabad,36,High,Other,Female,Evening,19,1,Government,Basic,3,906.55
+3,4.5,29,Sports Injury Rehab,Aurangabad,19,Low,Female,Other,Morning,17,1,Private,Advanced,18,1077.14
+12,4.7,107,Sports Injury Rehab,Pune,58,Low,Male,Female,Afternoon,1,1,Private,Basic,6,1819.03
+19,3.8,61,Initial Consultation,Pune,62,High,Female,Other,Evening,5,1,Government,Basic,25,867.38
+0,3.5,91,Post-surgical Rehab,Aurangabad,32,Medium,Male,Other,Evening,8,1,Clinic Chain,Specialized,14,2356.56
+7,3.7,43,Follow-up Session,Nagpur,20,Low,Female,Male,Evening,2,1,Clinic Chain,Basic,14,513.69
+13,4.9,99,Therapy Session,Aurangabad,28,High,Female,Male,Afternoon,0,1,Clinic Chain,Specialized,23,2570.13
+15,4.8,68,Sports Injury Rehab,Nashik,70,Low,Other,Male,Morning,0,0,Government,Specialized,5,1709.2
+13,4.4,45,Sports Injury Rehab,Aurangabad,63,Low,Female,Female,Afternoon,18,0,Government,Advanced,2,1227.5
+11,4.4,110,Follow-up Session,Nagpur,47,Low,Female,Female,Afternoon,4,1,Government,Basic,5,981.43
+18,4.5,56,Post-surgical Rehab,Nashik,74,High,Male,Other,Evening,12,0,Government,Basic,15,2157.53
+22,3.8,87,Sports Injury Rehab,Mumbai,57,Medium,Other,Female,Morning,18,0,Private,Specialized,1,2816.19
+14,4.9,69,Follow-up Session,Mumbai,35,Medium,Male,Other,Afternoon,11,1,Government,Advanced,27,710.33
+27,4.1,43,Initial Consultation,Nagpur,68,Medium,Male,Female,Evening,15,0,Clinic Chain,Advanced,6,1339.02
+1,4.1,38,Post-surgical Rehab,Aurangabad,65,Low,Other,Female,Afternoon,18,1,Private,Basic,29,1182.26
+1,4.3,119,Therapy Session,Pune,19,High,Other,Female,Afternoon,2,0,Clinic Chain,Specialized,10,2790.72
+22,3.6,79,Sports Injury Rehab,Nagpur,49,Low,Other,Male,Evening,11,1,Government,Basic,25,1129.15
+21,3.7,58,Follow-up Session,Nashik,25,Medium,Female,Female,Evening,4,0,Private,Basic,29,864.57
+18,4.6,93,Initial Consultation,Nashik,39,Medium,Other,Male,Morning,1,0,Government,Basic,6,1367.54
+24,3.6,108,Therapy Session,Mumbai,23,High,Other,Male,Afternoon,6,0,Private,Basic,3,2668.62
+25,4.4,37,Follow-up Session,Nashik,29,Low,Other,Female,Evening,12,1,Clinic Chain,Specialized,28,751.95
+29,3.9,38,Follow-up Session,Nagpur,64,Medium,Male,Other,Evening,14,0,Government,Advanced,23,784.6
+28,4.1,55,Therapy Session,Nashik,74,High,Male,Other,Morning,2,0,Government,Basic,19,1484.8
+21,3.9,93,Initial Consultation,Nagpur,57,Low,Female,Other,Morning,19,1,Private,Basic,6,1234.3
+25,4.0,116,Initial Consultation,Pune,53,Low,Male,Female,Evening,4,1,Private,Basic,3,1470.06
+25,4.6,74,Post-surgical Rehab,Mumbai,32,Medium,Female,Other,Morning,7,0,Government,Basic,28,1760.79
+21,3.9,88,Sports Injury Rehab,Nashik,45,Medium,Male,Male,Evening,0,0,Private,Advanced,11,2431.75
+16,4.3,66,Therapy Session,Nagpur,69,Low,Other,Other,Afternoon,7,0,Government,Advanced,4,1123.9
+19,4.2,68,Therapy Session,Aurangabad,74,Low,Male,Female,Morning,17,0,Private,Advanced,22,1297.52
+9,4.5,118,Therapy Session,Mumbai,66,Medium,Female,Other,Afternoon,19,1,Clinic Chain,Advanced,28,1546.33
+5,4.9,117,Initial Consultation,Pune,62,Low,Male,Male,Afternoon,15,0,Private,Basic,29,1110.1
+14,4.6,52,Sports Injury Rehab,Nagpur,35,Medium,Other,Female,Afternoon,17,0,Clinic Chain,Specialized,29,1791.0
+21,3.8,40,Post-surgical Rehab,Pune,19,Low,Female,Other,Evening,19,1,Private,Advanced,28,1599.54
+10,3.5,100,Follow-up Session,Pune,30,Medium,Other,Female,Afternoon,11,0,Private,Advanced,25,1166.03
+27,3.9,41,Follow-up Session,Nashik,62,High,Other,Female,Afternoon,12,0,Government,Basic,18,1040.39
+4,4.4,67,Therapy Session,Nashik,71,Medium,Female,Female,Afternoon,12,0,Private,Basic,25,1187.1
+0,3.6,56,Sports Injury Rehab,Nagpur,32,Medium,Other,Other,Evening,9,1,Private,Basic,4,1395.96
+7,4.2,34,Initial Consultation,Aurangabad,37,High,Other,Female,Afternoon,6,1,Clinic Chain,Basic,26,746.52
+20,4.4,54,Sports Injury Rehab,Nagpur,46,Low,Male,Other,Afternoon,13,0,Private,Specialized,29,1818.22
+27,4.0,111,Sports Injury Rehab,Aurangabad,59,High,Other,Male,Morning,15,0,Government,Specialized,18,2695.17
+11,4.7,90,Initial Consultation,Pune,46,Medium,Other,Other,Evening,14,1,Clinic Chain,Advanced,20,1158.7
+11,3.7,51,Therapy Session,Mumbai,20,Low,Other,Male,Afternoon,11,0,Government,Specialized,29,881.85
+4,3.6,30,Sports Injury Rehab,Nagpur,36,High,Other,Other,Morning,8,0,Government,Advanced,2,1557.46
+6,4.6,29,Follow-up Session,Nagpur,20,Low,Female,Female,Evening,7,1,Government,Advanced,26,331.28
+3,4.2,92,Initial Consultation,Aurangabad,71,Low,Male,Other,Evening,17,1,Government,Specialized,25,670.3
+5,4.5,97,Post-surgical Rehab,Pune,31,High,Other,Female,Evening,17,1,Clinic Chain,Advanced,10,2833.49
+12,4.2,96,Therapy Session,Pune,57,Low,Other,Male,Evening,12,0,Private,Basic,6,1492.93
+19,3.9,76,Initial Consultation,Aurangabad,72,High,Female,Other,Evening,17,0,Government,Advanced,28,1104.44
+29,4.7,44,Post-surgical Rehab,Pune,21,Medium,Other,Female,Evening,14,0,Clinic Chain,Basic,16,2188.01
+14,4.7,21,Post-surgical Rehab,Nashik,69,Low,Female,Male,Afternoon,3,0,Government,Specialized,24,1559.81
+2,4.5,83,Sports Injury Rehab,Mumbai,28,Medium,Male,Male,Afternoon,16,1,Private,Specialized,8,2247.17
+22,3.9,54,Sports Injury Rehab,Nagpur,48,Medium,Male,Other,Afternoon,4,0,Clinic Chain,Advanced,20,1777.76
+7,4.4,26,Sports Injury Rehab,Mumbai,60,Low,Other,Male,Afternoon,15,0,Clinic Chain,Basic,8,1165.66
+19,4.0,104,Initial Consultation,Nagpur,49,High,Other,Female,Morning,8,1,Private,Advanced,9,2036.21
+15,3.6,37,Initial Consultation,Nashik,44,Low,Other,Male,Afternoon,9,1,Clinic Chain,Specialized,12,858.56
+12,4.9,86,Therapy Session,Pune,47,Medium,Female,Male,Evening,17,0,Private,Advanced,14,1906.56
+17,3.7,61,Sports Injury Rehab,Aurangabad,60,Medium,Other,Female,Afternoon,16,1,Clinic Chain,Advanced,21,1536.03
+27,4.9,58,Post-surgical Rehab,Nashik,19,High,Other,Male,Afternoon,17,1,Clinic Chain,Basic,4,2880.59
+9,4.2,60,Follow-up Session,Mumbai,66,Low,Male,Male,Evening,6,0,Private,Specialized,28,926.3
+29,3.8,94,Therapy Session,Aurangabad,26,Medium,Other,Male,Afternoon,3,0,Private,Advanced,2,2374.3
+18,4.3,43,Initial Consultation,Pune,45,Medium,Male,Male,Afternoon,4,0,Clinic Chain,Basic,26,989.71
+16,4.8,79,Therapy Session,Nashik,48,Medium,Other,Female,Afternoon,15,0,Clinic Chain,Advanced,26,1664.5
+23,4.6,65,Therapy Session,Aurangabad,51,High,Male,Male,Morning,2,1,Private,Basic,7,2192.44
+18,4.7,38,Therapy Session,Nashik,73,Medium,Other,Female,Afternoon,17,1,Private,Basic,19,1294.45
+27,4.5,87,Therapy Session,Nashik,32,Medium,Male,Male,Evening,13,0,Clinic Chain,Advanced,9,2082.43
+25,4.5,109,Follow-up Session,Pune,65,Low,Female,Male,Evening,14,0,Clinic Chain,Specialized,12,1638.33
+22,4.8,61,Sports Injury Rehab,Nagpur,42,Low,Male,Male,Afternoon,16,1,Clinic Chain,Specialized,28,1619.63
+25,3.9,51,Post-surgical Rehab,Aurangabad,53,Medium,Male,Male,Afternoon,0,0,Private,Basic,2,2561.92
+4,4.2,58,Therapy Session,Pune,25,Medium,Male,Female,Afternoon,16,0,Clinic Chain,Specialized,28,1324.58
+25,3.8,55,Therapy Session,Nashik,26,Low,Other,Female,Evening,10,0,Government,Basic,21,960.63
+20,5.0,116,Therapy Session,Pune,54,High,Other,Female,Evening,16,0,Private,Specialized,7,3533.05
+29,4.9,55,Sports Injury Rehab,Nagpur,65,High,Other,Other,Morning,13,1,Clinic Chain,Advanced,28,2106.57
+22,3.6,22,Initial Consultation,Aurangabad,62,High,Female,Male,Morning,19,0,Private,Specialized,8,1692.67
+8,4.6,92,Initial Consultation,Nagpur,56,High,Female,Male,Morning,18,1,Government,Basic,29,829.48
+11,4.9,27,Follow-up Session,Mumbai,49,High,Male,Female,Evening,6,0,Private,Basic,21,952.3
+20,3.8,116,Initial Consultation,Aurangabad,69,High,Female,Other,Morning,12,0,Clinic Chain,Specialized,20,2317.93
+0,4.4,89,Therapy Session,Nagpur,34,High,Male,Male,Afternoon,17,1,Government,Advanced,11,1335.2
+25,4.9,60,Therapy Session,Nashik,52,High,Male,Female,Afternoon,13,0,Government,Basic,10,1737.13
+25,3.6,87,Therapy Session,Aurangabad,54,Low,Male,Male,Evening,0,1,Clinic Chain,Basic,1,1453.69
+0,4.5,32,Follow-up Session,Aurangabad,36,High,Female,Male,Morning,6,0,Clinic Chain,Basic,17,798.26
+14,3.9,68,Therapy Session,Pune,61,High,Other,Female,Afternoon,7,0,Clinic Chain,Basic,8,1789.06
+1,4.9,79,Initial Consultation,Nashik,46,High,Female,Female,Evening,17,0,Private,Basic,1,1680.51
+29,5.0,21,Sports Injury Rehab,Mumbai,24,Medium,Male,Male,Morning,8,0,Private,Advanced,1,2301.76
+21,4.9,79,Sports Injury Rehab,Nagpur,45,Low,Male,Male,Afternoon,0,0,Private,Specialized,2,2602.66
+15,4.2,24,Post-surgical Rehab,Pune,26,Low,Female,Female,Morning,16,1,Clinic Chain,Advanced,15,1535.1
+24,4.8,63,Initial Consultation,Nagpur,45,Low,Male,Male,Evening,18,1,Clinic Chain,Advanced,18,998.5
+7,4.8,46,Therapy Session,Mumbai,23,High,Male,Male,Morning,5,0,Private,Basic,3,1936.8
+12,4.0,51,Sports Injury Rehab,Mumbai,46,High,Female,Female,Evening,2,0,Government,Advanced,22,1687.08
+20,4.7,40,Initial Consultation,Aurangabad,34,Medium,Female,Male,Morning,4,1,Private,Basic,24,898.07
+0,3.6,27,Sports Injury Rehab,Mumbai,33,Low,Female,Male,Afternoon,1,1,Government,Advanced,17,781.55
+15,4.4,91,Therapy Session,Nagpur,40,High,Male,Other,Evening,19,0,Clinic Chain,Basic,19,1919.2
+28,3.8,69,Sports Injury Rehab,Nashik,48,Low,Male,Female,Evening,3,0,Clinic Chain,Basic,24,1424.92
+6,3.7,86,Post-surgical Rehab,Nashik,20,Medium,Other,Other,Evening,9,1,Private,Advanced,29,2022.86
+4,3.6,63,Post-surgical Rehab,Aurangabad,38,Medium,Other,Other,Morning,9,0,Private,Advanced,17,2225.7
+21,4.5,77,Sports Injury Rehab,Nagpur,43,Medium,Female,Other,Morning,10,1,Clinic Chain,Specialized,9,2430.24
+28,4.0,22,Initial Consultation,Nagpur,53,Low,Other,Male,Afternoon,15,0,Private,Specialized,10,1303.11
+22,4.6,105,Initial Consultation,Mumbai,59,High,Male,Male,Evening,16,1,Clinic Chain,Specialized,28,2063.7
+2,3.6,89,Initial Consultation,Nagpur,54,High,Other,Other,Evening,15,1,Clinic Chain,Advanced,16,1259.09
+11,4.0,21,Sports Injury Rehab,Pune,70,Medium,Male,Other,Morning,6,0,Government,Advanced,25,1078.44
+25,4.3,106,Initial Consultation,Mumbai,39,High,Female,Other,Morning,15,1,Private,Basic,23,1788.64
+15,4.7,63,Therapy Session,Pune,59,Medium,Female,Male,Afternoon,2,0,Clinic Chain,Specialized,24,1876.97
+18,4.0,21,Post-surgical Rehab,Aurangabad,29,Low,Male,Other,Afternoon,15,0,Private,Basic,22,1521.83
+4,4.4,100,Therapy Session,Nashik,59,Medium,Other,Other,Morning,7,0,Government,Basic,23,1112.44
+21,4.8,54,Initial Consultation,Aurangabad,30,Low,Female,Female,Evening,11,0,Government,Basic,19,789.3
+24,4.4,117,Therapy Session,Nashik,28,Medium,Female,Female,Afternoon,2,1,Private,Basic,15,2035.94
+28,3.8,106,Initial Consultation,Aurangabad,71,High,Other,Male,Morning,16,0,Private,Specialized,19,2612.36
+13,3.5,49,Sports Injury Rehab,Nagpur,33,High,Other,Female,Morning,17,0,Clinic Chain,Basic,12,1789.65
+27,4.8,27,Therapy Session,Pune,25,Medium,Male,Female,Evening,10,0,Government,Advanced,1,1408.69
+4,3.5,41,Sports Injury Rehab,Nashik,57,High,Other,Female,Morning,3,0,Government,Advanced,23,1420.15
+14,4.8,63,Sports Injury Rehab,Mumbai,74,High,Other,Male,Morning,15,1,Government,Advanced,26,1583.7
+16,4.3,77,Follow-up Session,Pune,57,High,Other,Female,Afternoon,16,0,Private,Specialized,1,2227.2
+29,4.9,55,Initial Consultation,Mumbai,62,Low,Male,Male,Morning,8,1,Clinic Chain,Basic,24,941.04
+13,4.7,88,Post-surgical Rehab,Pune,19,High,Male,Other,Morning,5,1,Private,Specialized,13,3926.87
+29,5.0,96,Initial Consultation,Pune,47,Low,Female,Female,Afternoon,19,1,Private,Basic,3,1532.26
+19,4.0,112,Post-surgical Rehab,Aurangabad,47,Medium,Male,Male,Evening,1,0,Private,Specialized,16,3481.16
+4,4.7,50,Initial Consultation,Nashik,29,High,Female,Female,Evening,8,0,Clinic Chain,Specialized,12,1627.53
+11,4.1,66,Sports Injury Rehab,Nashik,27,High,Other,Other,Afternoon,5,0,Private,Basic,3,2474.44
+15,4.2,74,Therapy Session,Pune,61,High,Female,Male,Afternoon,2,0,Government,Specialized,2,2228.75
+25,4.4,99,Therapy Session,Nagpur,28,Medium,Female,Male,Evening,19,1,Government,Basic,11,1305.37
+25,4.8,81,Follow-up Session,Nagpur,32,Low,Other,Male,Evening,5,1,Government,Advanced,21,916.75
+15,5.0,49,Post-surgical Rehab,Mumbai,33,Low,Female,Other,Evening,6,0,Clinic Chain,Advanced,22,1812.81
+20,4.7,74,Post-surgical Rehab,Mumbai,34,High,Male,Other,Evening,0,0,Private,Advanced,7,3704.82
+6,4.1,35,Post-surgical Rehab,Aurangabad,43,Medium,Male,Other,Evening,0,0,Clinic Chain,Specialized,1,2584.9
+3,4.1,31,Sports Injury Rehab,Pune,19,Medium,Male,Male,Afternoon,4,0,Private,Advanced,5,1715.09
+0,4.6,36,Post-surgical Rehab,Mumbai,67,Medium,Male,Other,Morning,5,0,Government,Basic,21,1334.09
+29,3.9,35,Therapy Session,Mumbai,29,Medium,Female,Female,Evening,12,0,Private,Advanced,9,1731.3
+29,3.7,31,Sports Injury Rehab,Pune,68,Medium,Female,Other,Evening,1,0,Private,Advanced,11,2014.95
+4,4.0,27,Initial Consultation,Aurangabad,43,Low,Other,Male,Morning,14,1,Private,Specialized,20,535.54
+22,3.9,103,Post-surgical Rehab,Mumbai,40,Low,Female,Female,Morning,14,1,Clinic Chain,Basic,9,1963.34
+25,3.9,22,Post-surgical Rehab,Aurangabad,35,Low,Female,Other,Morning,12,1,Private,Specialized,9,2253.89
+9,3.9,35,Initial Consultation,Nashik,49,High,Female,Female,Morning,13,1,Private,Specialized,22,1087.47
+21,3.6,49,Post-surgical Rehab,Aurangabad,66,Medium,Other,Female,Morning,6,0,Private,Basic,2,2393.35
+4,3.5,42,Initial Consultation,Nagpur,55,High,Male,Male,Morning,13,0,Clinic Chain,Specialized,19,1148.8
+3,5.0,111,Sports Injury Rehab,Nagpur,74,Medium,Female,Female,Afternoon,9,0,Clinic Chain,Basic,9,1972.58
+1,4.1,24,Therapy Session,Aurangabad,64,Low,Other,Female,Morning,16,0,Clinic Chain,Advanced,28,579.17
+19,4.1,103,Initial Consultation,Nagpur,20,High,Other,Male,Morning,13,0,Private,Basic,8,2180.44
+9,4.5,84,Follow-up Session,Nashik,55,Low,Other,Male,Afternoon,7,1,Government,Basic,19,659.34
+25,3.8,49,Initial Consultation,Pune,20,Medium,Male,Male,Morning,3,0,Government,Basic,18,873.67
+18,4.9,40,Post-surgical Rehab,Nagpur,47,Medium,Female,Female,Evening,15,1,Government,Specialized,13,2115.16
+25,4.7,103,Sports Injury Rehab,Nagpur,18,Medium,Other,Female,Evening,12,0,Private,Basic,1,2504.43
+0,3.6,89,Sports Injury Rehab,Aurangabad,47,Low,Male,Female,Morning,19,1,Government,Basic,4,981.71
+23,4.1,41,Initial Consultation,Nashik,62,Medium,Other,Male,Afternoon,17,0,Government,Basic,19,878.35
+4,4.8,101,Therapy Session,Pune,49,Low,Other,Other,Evening,13,1,Government,Advanced,28,996.71
+12,4.9,91,Follow-up Session,Aurangabad,45,High,Other,Female,Afternoon,17,0,Private,Basic,28,1343.16
+3,4.2,51,Sports Injury Rehab,Aurangabad,38,Medium,Other,Other,Evening,4,0,Government,Specialized,7,1717.63
+15,4.4,52,Post-surgical Rehab,Nashik,63,Medium,Other,Male,Morning,8,0,Government,Basic,6,1804.11
+23,3.8,35,Post-surgical Rehab,Pune,30,Medium,Male,Female,Afternoon,2,0,Private,Basic,5,2294.25
+15,5.0,95,Therapy Session,Nashik,44,High,Female,Other,Afternoon,7,1,Clinic Chain,Advanced,10,2292.75
+22,3.8,57,Sports Injury Rehab,Pune,53,Medium,Female,Female,Afternoon,19,0,Government,Basic,11,1451.73
+1,4.9,117,Initial Consultation,Nashik,24,Low,Female,Female,Evening,9,1,Clinic Chain,Specialized,17,1240.43
+16,4.5,33,Post-surgical Rehab,Aurangabad,39,Low,Female,Female,Evening,18,0,Government,Basic,18,1317.34
+27,4.4,55,Therapy Session,Aurangabad,27,Medium,Male,Other,Evening,2,1,Private,Specialized,9,2268.13
+26,4.3,116,Sports Injury Rehab,Mumbai,56,Medium,Male,Male,Morning,10,0,Clinic Chain,Advanced,24,2322.52
+19,3.8,42,Sports Injury Rehab,Nagpur,70,High,Male,Female,Evening,10,0,Clinic Chain,Basic,28,1719.28
+23,3.8,85,Sports Injury Rehab,Nashik,32,High,Other,Male,Morning,16,1,Clinic Chain,Advanced,24,2296.47
+11,3.8,104,Sports Injury Rehab,Mumbai,32,High,Other,Male,Afternoon,15,0,Clinic Chain,Basic,20,2262.45
+17,3.8,21,Sports Injury Rehab,Nagpur,21,Medium,Other,Other,Afternoon,6,0,Government,Specialized,13,1484.15
+2,4.7,110,Post-surgical Rehab,Nashik,49,High,Female,Other,Morning,3,1,Government,Advanced,2,2642.73
+27,4.0,92,Therapy Session,Pune,40,High,Other,Male,Evening,18,0,Clinic Chain,Basic,17,2195.82
+0,3.6,84,Sports Injury Rehab,Nagpur,72,Low,Female,Female,Morning,11,1,Government,Specialized,23,1066.4
+0,5.0,94,Follow-up Session,Aurangabad,23,High,Other,Other,Afternoon,14,0,Clinic Chain,Advanced,14,1482.31
+28,4.8,86,Follow-up Session,Mumbai,41,Low,Female,Female,Afternoon,10,1,Clinic Chain,Basic,5,1255.79
+18,4.9,71,Therapy Session,Nagpur,37,Low,Other,Female,Morning,4,1,Private,Advanced,9,1484.58
+10,5.0,81,Initial Consultation,Nagpur,54,High,Other,Female,Evening,4,1,Clinic Chain,Basic,26,1353.18
+4,3.8,42,Initial Consultation,Aurangabad,37,Low,Male,Male,Evening,14,1,Government,Specialized,11,539.94
+11,4.1,45,Initial Consultation,Nashik,29,Medium,Other,Female,Morning,17,0,Clinic Chain,Specialized,6,1334.37
+2,4.6,87,Follow-up Session,Pune,50,Medium,Other,Male,Morning,10,0,Private,Advanced,16,1259.47
+0,4.5,101,Initial Consultation,Aurangabad,45,High,Male,Male,Evening,11,1,Government,Advanced,0,1291.29
+0,3.7,74,Post-surgical Rehab,Pune,25,Medium,Female,Female,Afternoon,1,0,Private,Basic,25,1961.69
+7,4.7,25,Sports Injury Rehab,Nashik,18,Low,Male,Female,Morning,19,0,Private,Specialized,17,1605.76
+9,3.8,54,Follow-up Session,Nagpur,54,Medium,Male,Female,Evening,14,0,Clinic Chain,Basic,25,617.49
+10,3.8,41,Therapy Session,Pune,39,High,Female,Female,Evening,19,1,Private,Specialized,14,1713.63
+11,4.3,62,Therapy Session,Mumbai,23,High,Other,Male,Afternoon,3,0,Private,Advanced,18,2100.22
+28,4.4,34,Sports Injury Rehab,Mumbai,38,Low,Female,Female,Afternoon,17,0,Government,Basic,27,947.25
+12,4.4,105,Follow-up Session,Aurangabad,49,High,Other,Female,Afternoon,5,1,Private,Basic,0,1899.07
+11,3.6,79,Initial Consultation,Nashik,52,Medium,Other,Male,Afternoon,18,0,Clinic Chain,Specialized,29,1178.6
+13,4.8,31,Initial Consultation,Aurangabad,32,High,Female,Other,Afternoon,10,1,Clinic Chain,Specialized,4,1642.83
+1,3.9,68,Post-surgical Rehab,Aurangabad,22,Low,Male,Other,Morning,1,1,Clinic Chain,Specialized,14,1930.54
+28,3.7,61,Post-surgical Rehab,Aurangabad,73,High,Female,Male,Evening,7,1,Private,Advanced,2,3327.86
+18,4.8,57,Initial Consultation,Mumbai,63,Medium,Other,Other,Morning,10,0,Government,Basic,0,1237.05
+17,4.9,101,Therapy Session,Mumbai,67,Low,Female,Male,Morning,4,0,Clinic Chain,Specialized,7,2088.1
+2,4.8,64,Therapy Session,Aurangabad,65,Medium,Female,Female,Morning,17,1,Private,Advanced,11,1347.14
+22,4.7,54,Post-surgical Rehab,Mumbai,23,Low,Other,Female,Morning,17,1,Clinic Chain,Specialized,26,1998.97
+16,4.5,49,Sports Injury Rehab,Nashik,42,High,Male,Other,Morning,13,1,Clinic Chain,Basic,21,1770.72
+25,4.3,107,Initial Consultation,Aurangabad,73,Low,Female,Female,Afternoon,9,1,Government,Specialized,24,1127.04
+7,3.6,49,Post-surgical Rehab,Mumbai,63,Low,Other,Other,Afternoon,2,1,Clinic Chain,Basic,18,1374.8
+28,4.1,97,Post-surgical Rehab,Pune,73,High,Other,Other,Evening,8,1,Government,Advanced,24,2505.14
+25,4.1,25,Initial Consultation,Aurangabad,57,Medium,Female,Female,Morning,2,0,Private,Advanced,24,1231.04
+9,3.9,86,Initial Consultation,Aurangabad,46,High,Male,Female,Evening,10,1,Clinic Chain,Specialized,11,1660.87
+25,4.6,99,Therapy Session,Nashik,24,Low,Female,Other,Afternoon,11,1,Private,Basic,12,1642.94
+29,4.2,26,Sports Injury Rehab,Nagpur,57,High,Male,Female,Afternoon,11,1,Private,Basic,27,1912.25
+1,3.6,71,Sports Injury Rehab,Nagpur,30,Low,Male,Male,Afternoon,2,0,Private,Basic,0,1428.55
+18,3.8,33,Initial Consultation,Nashik,55,High,Male,Female,Morning,6,0,Clinic Chain,Specialized,18,1417.79
+8,4.5,92,Follow-up Session,Nashik,35,High,Male,Female,Morning,13,0,Government,Basic,5,1359.65
+6,3.6,34,Post-surgical Rehab,Nashik,19,Medium,Female,Male,Afternoon,10,0,Clinic Chain,Basic,7,1713.02
+3,4.8,40,Post-surgical Rehab,Nagpur,25,Low,Other,Female,Evening,6,1,Private,Basic,3,1841.94
+25,4.2,54,Initial Consultation,Nashik,28,Medium,Other,Female,Evening,9,0,Government,Basic,4,1049.11
+20,4.2,85,Follow-up Session,Mumbai,50,Low,Other,Other,Afternoon,10,1,Private,Specialized,24,1170.7
+17,4.4,110,Therapy Session,Aurangabad,71,High,Other,Female,Evening,14,1,Government,Specialized,21,2041.65
+12,4.7,21,Initial Consultation,Aurangabad,55,Low,Other,Female,Afternoon,18,1,Clinic Chain,Basic,27,439.49
+10,4.0,54,Initial Consultation,Pune,65,Medium,Other,Male,Evening,15,1,Government,Basic,6,784.55
+28,4.5,101,Post-surgical Rehab,Pune,44,Medium,Female,Other,Afternoon,19,1,Clinic Chain,Advanced,22,2532.18
+23,4.3,97,Initial Consultation,Aurangabad,37,Medium,Male,Other,Evening,11,1,Private,Advanced,3,1822.72
+3,3.9,39,Initial Consultation,Mumbai,29,Low,Other,Other,Morning,17,0,Government,Basic,19,395.69
+24,4.8,101,Initial Consultation,Nagpur,60,Medium,Female,Female,Afternoon,12,0,Private,Basic,3,1971.91
+20,4.7,29,Post-surgical Rehab,Nagpur,48,Medium,Other,Other,Afternoon,4,0,Government,Advanced,29,1688.66
+28,4.5,44,Therapy Session,Mumbai,44,Medium,Other,Male,Evening,3,0,Clinic Chain,Advanced,14,1749.58
+24,4.8,85,Therapy Session,Nagpur,49,High,Male,Other,Afternoon,13,0,Government,Basic,26,1674.12
+3,4.8,44,Initial Consultation,Nashik,27,High,Male,Male,Afternoon,7,1,Government,Specialized,20,1005.45
+9,4.6,73,Post-surgical Rehab,Aurangabad,20,Low,Male,Other,Afternoon,8,0,Clinic Chain,Specialized,4,2397.2
+4,4.8,52,Therapy Session,Aurangabad,62,Low,Other,Other,Morning,18,0,Clinic Chain,Basic,23,927.83
+8,4.5,55,Therapy Session,Mumbai,44,Medium,Other,Male,Morning,2,0,Clinic Chain,Basic,8,1399.27
+23,4.5,114,Therapy Session,Nagpur,52,High,Other,Other,Evening,4,1,Government,Advanced,1,2291.36
+2,4.4,33,Post-surgical Rehab,Pune,48,Medium,Male,Other,Morning,17,1,Private,Advanced,26,1628.24
+16,4.6,84,Post-surgical Rehab,Pune,32,Medium,Female,Other,Evening,0,1,Government,Specialized,6,2504.43
+2,3.7,99,Initial Consultation,Nagpur,33,High,Other,Female,Morning,7,0,Government,Basic,16,1117.71
+15,4.8,73,Sports Injury Rehab,Pune,30,High,Other,Male,Evening,18,0,Private,Advanced,15,2676.49
+3,4.8,71,Therapy Session,Mumbai,66,High,Other,Other,Morning,16,0,Clinic Chain,Specialized,16,2055.31
+17,3.5,22,Sports Injury Rehab,Mumbai,52,Low,Female,Male,Morning,16,0,Government,Specialized,19,1106.29
+16,4.7,118,Post-surgical Rehab,Nagpur,69,Low,Other,Male,Evening,10,0,Private,Specialized,25,2860.15
+6,3.7,60,Post-surgical Rehab,Pune,28,Medium,Female,Male,Afternoon,1,1,Clinic Chain,Advanced,22,1863.04
+23,4.0,25,Post-surgical Rehab,Mumbai,38,Low,Other,Other,Afternoon,5,0,Clinic Chain,Advanced,1,1964.96
+22,4.6,44,Sports Injury Rehab,Mumbai,68,High,Female,Other,Morning,13,1,Government,Basic,10,1749.33
+29,3.7,32,Post-surgical Rehab,Nashik,71,High,Other,Male,Evening,2,0,Clinic Chain,Basic,1,2869.38
+4,4.7,117,Initial Consultation,Nashik,28,Low,Male,Female,Afternoon,11,1,Clinic Chain,Specialized,0,1612.92
+11,4.7,27,Post-surgical Rehab,Mumbai,47,Medium,Male,Male,Evening,3,1,Private,Specialized,25,2320.49
+16,4.3,40,Follow-up Session,Nagpur,65,Medium,Male,Female,Afternoon,11,1,Private,Advanced,1,1159.02
+22,3.5,117,Sports Injury Rehab,Aurangabad,70,Low,Male,Male,Evening,12,1,Clinic Chain,Advanced,28,1666.75
+12,3.9,87,Follow-up Session,Aurangabad,52,Medium,Other,Male,Morning,1,0,Private,Basic,22,1122.48
+22,4.4,44,Post-surgical Rehab,Mumbai,39,Medium,Male,Male,Evening,1,0,Clinic Chain,Basic,8,2279.95
+24,5.0,98,Initial Consultation,Mumbai,55,Medium,Female,Other,Afternoon,14,0,Government,Basic,21,1257.66
+2,4.4,87,Therapy Session,Mumbai,48,High,Male,Female,Morning,16,1,Private,Advanced,25,1602.46
+8,3.9,64,Post-surgical Rehab,Nagpur,31,High,Male,Female,Evening,6,0,Clinic Chain,Specialized,1,3461.33
+29,4.5,79,Initial Consultation,Nashik,41,Low,Male,Male,Afternoon,13,0,Clinic Chain,Basic,27,1119.76
+16,4.3,31,Sports Injury Rehab,Mumbai,67,High,Other,Other,Morning,11,0,Private,Basic,14,1994.6
+16,4.7,51,Follow-up Session,Mumbai,66,Medium,Male,Other,Evening,16,0,Private,Advanced,9,1305.65
+29,3.7,115,Follow-up Session,Pune,49,High,Female,Female,Afternoon,13,1,Government,Basic,14,1396.16
+19,4.6,111,Follow-up Session,Nagpur,53,Low,Male,Other,Evening,5,1,Clinic Chain,Specialized,9,1545.79
+15,4.3,32,Sports Injury Rehab,Mumbai,49,High,Male,Female,Evening,18,0,Government,Advanced,28,1478.61
+24,4.9,50,Initial Consultation,Pune,72,Medium,Male,Female,Morning,5,0,Government,Basic,24,992.53
+21,4.0,97,Sports Injury Rehab,Aurangabad,32,Medium,Female,Female,Morning,17,0,Government,Basic,22,1570.19
+12,4.4,39,Follow-up Session,Mumbai,60,Low,Male,Other,Afternoon,4,1,Private,Advanced,26,566.44
+26,4.9,37,Post-surgical Rehab,Mumbai,52,High,Female,Female,Morning,5,1,Government,Advanced,16,2249.87
+18,3.7,112,Therapy Session,Pune,20,High,Female,Female,Afternoon,1,1,Private,Basic,27,2003.3
+16,4.9,79,Sports Injury Rehab,Nagpur,33,High,Male,Male,Evening,7,0,Private,Specialized,8,3397.34
+3,4.5,82,Sports Injury Rehab,Mumbai,22,Medium,Female,Female,Evening,14,1,Government,Advanced,17,1359.22
+11,3.6,25,Initial Consultation,Aurangabad,38,Low,Other,Female,Afternoon,14,1,Government,Specialized,3,611.45
+28,4.0,51,Initial Consultation,Mumbai,27,High,Male,Male,Evening,10,1,Clinic Chain,Basic,8,1472.27
+8,4.6,112,Sports Injury Rehab,Aurangabad,36,Medium,Male,Male,Morning,0,1,Government,Specialized,15,2023.88
+18,3.6,62,Follow-up Session,Nashik,42,Medium,Female,Other,Evening,17,1,Clinic Chain,Basic,3,957.68
+11,4.4,21,Therapy Session,Nashik,21,Medium,Female,Female,Morning,11,0,Government,Basic,15,865.73
+8,4.0,79,Initial Consultation,Aurangabad,46,High,Male,Other,Afternoon,11,0,Government,Basic,18,986.27
+6,4.4,42,Follow-up Session,Nagpur,36,High,Other,Other,Afternoon,10,0,Government,Basic,0,1039.74
+27,3.6,102,Post-surgical Rehab,Mumbai,60,High,Female,Male,Evening,7,0,Government,Specialized,22,3175.85
+13,4.8,50,Initial Consultation,Mumbai,19,High,Female,Other,Evening,6,1,Clinic Chain,Basic,5,1515.19
+19,5.0,24,Follow-up Session,Nashik,27,High,Other,Female,Morning,1,0,Clinic Chain,Basic,9,1295.13
+18,5.0,102,Follow-up Session,Aurangabad,60,High,Other,Male,Morning,10,0,Government,Specialized,15,1815.66
+25,4.6,53,Therapy Session,Mumbai,42,High,Male,Female,Evening,9,0,Government,Advanced,3,1980.24
+14,3.7,29,Therapy Session,Mumbai,37,High,Other,Female,Evening,2,1,Clinic Chain,Specialized,21,1519.98
+15,4.6,108,Post-surgical Rehab,Nagpur,65,High,Male,Male,Afternoon,19,0,Private,Specialized,21,4067.91
+20,3.5,21,Follow-up Session,Pune,36,Medium,Other,Female,Afternoon,9,1,Private,Specialized,12,979.56
+4,3.5,30,Follow-up Session,Nashik,40,High,Female,Male,Afternoon,17,1,Private,Basic,15,492.81
+2,4.0,69,Therapy Session,Nashik,41,Low,Male,Female,Evening,13,1,Clinic Chain,Basic,19,848.76
+11,4.2,50,Initial Consultation,Pune,28,Medium,Male,Male,Evening,17,0,Clinic Chain,Basic,29,773.14
+24,4.7,75,Initial Consultation,Mumbai,63,High,Male,Other,Evening,7,1,Private,Advanced,28,1636.78
+19,4.5,98,Sports Injury Rehab,Nagpur,51,Low,Other,Female,Afternoon,9,0,Private,Basic,5,2003.0
+26,4.2,92,Therapy Session,Nagpur,72,High,Female,Male,Evening,12,0,Government,Advanced,25,1888.12
+20,3.9,106,Sports Injury Rehab,Nashik,45,Low,Male,Female,Morning,7,0,Clinic Chain,Basic,10,1759.03
+3,5.0,102,Therapy Session,Nagpur,22,Low,Male,Female,Evening,3,1,Clinic Chain,Specialized,23,1427.16
+20,4.1,28,Post-surgical Rehab,Pune,22,Low,Male,Female,Evening,3,1,Private,Basic,28,1487.94
+22,4.2,118,Follow-up Session,Mumbai,68,Low,Male,Male,Evening,4,0,Private,Advanced,2,1766.81
+15,3.7,40,Post-surgical Rehab,Pune,38,Medium,Female,Other,Evening,0,1,Clinic Chain,Advanced,19,1873.83
+24,4.7,92,Therapy Session,Aurangabad,29,Medium,Other,Other,Evening,16,1,Government,Basic,9,1461.05
+6,4.5,47,Follow-up Session,Nashik,67,Low,Female,Other,Morning,1,1,Private,Specialized,28,661.07
+12,3.8,81,Initial Consultation,Nagpur,21,High,Male,Male,Morning,7,0,Clinic Chain,Basic,27,1312.73
+20,3.6,26,Initial Consultation,Aurangabad,71,Low,Female,Other,Evening,6,1,Clinic Chain,Basic,29,485.39
+9,4.5,99,Sports Injury Rehab,Nagpur,66,Medium,Male,Male,Afternoon,14,1,Government,Basic,0,1551.86
+25,4.5,35,Therapy Session,Mumbai,59,High,Other,Female,Evening,4,0,Government,Specialized,19,1890.91
+6,3.9,116,Therapy Session,Mumbai,37,Medium,Other,Female,Evening,1,1,Private,Advanced,10,1826.05
+13,4.9,23,Initial Consultation,Mumbai,55,Medium,Other,Other,Evening,6,0,Private,Specialized,25,1194.93
+25,3.7,23,Post-surgical Rehab,Nagpur,42,High,Male,Male,Afternoon,7,1,Private,Advanced,25,2340.57
+4,4.1,59,Follow-up Session,Aurangabad,31,Low,Female,Female,Afternoon,6,1,Clinic Chain,Advanced,11,651.15
+2,4.9,36,Post-surgical Rehab,Mumbai,28,Low,Other,Male,Afternoon,6,1,Private,Advanced,13,1722.07
+22,4.1,71,Post-surgical Rehab,Aurangabad,49,Low,Male,Male,Morning,13,1,Clinic Chain,Specialized,24,2163.83
+28,4.5,112,Initial Consultation,Nagpur,28,Low,Male,Female,Afternoon,17,1,Private,Basic,7,1512.84
+10,4.1,71,Initial Consultation,Aurangabad,35,High,Female,Male,Morning,5,1,Government,Basic,10,1023.98
+10,3.9,55,Initial Consultation,Nagpur,44,High,Other,Female,Morning,3,0,Government,Basic,3,1253.14
+17,5.0,57,Sports Injury Rehab,Nagpur,72,High,Male,Female,Afternoon,9,1,Clinic Chain,Basic,27,1797.64
+14,4.1,69,Post-surgical Rehab,Nashik,71,Medium,Female,Female,Afternoon,17,1,Government,Basic,6,1680.95

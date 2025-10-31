@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhysioGuardian - Clinic Locator</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>PhysioGuardian</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="clinic-locator.html" class="active">Clinic Locator</a></li>
+                <li><a href="fee-predictor.html">Fee Predictor</a></li>
+                <li><a href="chat.html">Emergency Chat</a></li>
+                <li><a href="index.html#about-us">About Us</a></li>
+            </ul>
+        </nav>
+        <div class="header-right">
+            <div id="auth-links" style="display: flex; align-items: center; gap: 1rem;"></div>
+            <div class="user-profile">G</div>
+            <button id="theme-toggle" aria-label="Toggle light and dark mode">
+                <i class="fas fa-sun sun-icon"></i>
+                <i class="fas fa-moon moon-icon"></i>
+            </button>
+        </div>
+    </header>
+    <main class="clinic-locator-main">
+        <div id="sidebar">
+            <h2 class="module-title">Find a Specialist Near You</h2>
+            <p class="tagline">Allow location access or enter a city to find certified physiotherapists.</p>
+            <button id="find-btn" class="primary-btn">Find Clinics Near Me</button>
+            <div id="filter-controls">
+                <input type="text" id="name-filter" placeholder="Filter by name..." class="text-input">
+                <select id="rating-filter" class="select-input">
+                    <option value="0">All Ratings</option>
+                    <option value="4.8">4.8+ Stars</option>
+                    <option value="4.5">4.5+ Stars</option>
+                    <option value="4">4+ Stars</option>
+                    <option value="3">3+ Stars</option>
+                    <option value="2">2+ Stars</option>
+                    <option value="1">1+ Star</option>
+                </select>
+                <select id="specialty-filter" class="select-input">
+                    <option value="all">All Specialties</option>
+                </select>
+            </div>
+            <h3 class="list-title">Nearby Clinics</h3>
+            <p id="initial-message" class="info-message">Search to see results.</p>
+            <ul id="physio-list"></ul>
+        </div>
+        <div id="map-container">
+            <div id="map"></div>
+        </div>
+    </main>
+
+    <div id="assistant-container" class="assistant-container">
+        <button id="assistant-bubble" class="assistant-bubble">
+            <img src="asistant2.png" alt="Elara, the Assistant" class="assistant-icon">
+            <span class="assistant-text">Elara</span>
+        </button>
+        <div id="assistant-chat-window" class="assistant-chat-window">
+            <div class="assistant-chat-header">
+                <h3>Elara, the Assistant</h3>
+                <button id="close-assistant-chat" class="close-btn">×</button>
+            </div>
+            <div id="assistant-chat-messages" class="chat-window">
+                <div class="chat-message bot-message">Hi! I'm Elara, your personal guide. How can I help you navigate PhysioGuardian?</div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="assistant-user-input" placeholder="Ask about the website...">
+                <button id="assistant-send-btn" class="send-btn"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+    <script src="theme-toggle.js"></script>
+    <script src="main-auth.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhysioGuardian - Fee Predictor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>PhysioGuardian</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="clinic-locator.html">Clinic Locator</a></li>
+                <li><a href="fee-predictor.html" class="active">Fee Predictor</a></li>
+                <li><a href="chat.html">Emergency Chat</a></li>
+                <li><a href="index.html">About Us</a></li>
+            </ul>
+        </nav>
+        <div class="header-right">
+            <div id="auth-links" style="display: flex; align-items: center; gap: 1rem;"></div>
+            <div class="user-profile">G</div>
+            <button id="theme-toggle" aria-label="Toggle light and dark mode">
+                <i class="fas fa-sun sun-icon"></i>
+                <i class="fas fa-moon moon-icon"></i>
+            </button>
+        </div>
+    </header>
+    <main class="fee-predictor-main">
+        <div class="prediction-container card">
+            <h2 class="module-title">Estimate Your Costs</h2>
+            <p class="tagline">Select a service and session duration to get a transparent, smart estimate for your treatment plan.</p>
+            <form id="prediction-form">
+                <div class="form-group">
+                    <label for="experience">Years of Experience:</label>
+                    <input type="number" id="experience" class="text-input" min="0" required>
+                </div>
+                <div class="form-group">
+                    <label for="rating">Doctor's Rating (1-5):</label>
+                    <input type="number" id="rating" class="text-input" min="1" max="5" step="0.1" required>
+                </div>
+                <div class="form-group">
+                    <label for="service-type">Service Type</label>
+                    <select id="service-type" class="select-input" required>
+                        <option value="Initial Consultation">Initial Consultation</option>
+                        <option value="Follow-up Session">Follow-up Session</option>
+                        <option value="Therapy Session">Therapy Session</option>
+                        <option value="Sports Injury Rehab">Sports Injury Rehab</option>
+                        <option value="Post-surgical Rehab">Post-surgical Rehab</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="session-duration">Session Duration</label>
+                    <select id="session-duration" class="select-input" required>
+                        <option value="30">30 Minutes</option>
+                        <option value="45">45 Minutes</option>
+                        <option value="60">60 Minutes</option>
+                        <option value="90">90 Minutes</option>
+                    </select>
+                </div>
+                
+                <button type="submit" id="predict-btn" class="primary-btn">Predict Fee</button>
+            </form>
+
+            <div id="prediction-result" class="result-box">
+                The predicted fee is: <span id="predicted-fee"></span>
+            </div>
+        </div>
+    </main>
+
+    <div id="assistant-container" class="assistant-container">
+        <button id="assistant-bubble" class="assistant-bubble">
+            <img src="asistant2.png" alt="Elara, the Assistant" class="assistant-icon">
+            <span class="assistant-text">Elara</span>
+        </button>
+        <div id="assistant-chat-window" class="assistant-chat-window">
+            <div class="assistant-chat-header">
+                <h3>Elara, the Assistant</h3>
+                <button id="close-assistant-chat" class="close-btn">×</button>
+            </div>
+            <div id="assistant-chat-messages" class="chat-window">
+                <div class="chat-message bot-message">Hi! I'm Elara, your personal guide. How can I help you navigate PhysioGuardian?</div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="assistant-user-input" placeholder="Ask about the website...">
+                <button id="assistant-send-btn" class="send-btn"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="predict.js"></script>
+    <script src="script.js"></script>
+    <script src="theme-toggle.js"></script>
+    <script src="main-auth.js" type="module"></script>
+</body>
+</html>

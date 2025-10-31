@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Routine Generator - PhysioGuardian</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .ai-routine-main {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 4rem 2rem;
+            flex-grow: 1;
+        }
+        .generator-container {
+            width: 100%;
+            max-width: 800px;
+            background-color: var(--card-background);
+            padding: 2.5rem;
+            border-radius: 12px;
+            box-shadow: 0 8px 30px var(--shadow-color);
+            text-align: center;
+        }
+        .generator-container h1 {
+            color: var(--primary-blue);
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        .generator-container p.tagline {
+            color: var(--secondary-text-color);
+            margin-bottom: 2.5rem;
+        }
+        #problem-description {
+            width: 100%;
+            min-height: 120px;
+            padding: 1rem;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            background-color: var(--input-bg);
+            color: var(--text-color);
+            font-size: 1.1rem;
+            resize: vertical;
+            margin-bottom: 1.5rem;
+        }
+        #results-container {
+            margin-top: 3rem;
+            text-align: left;
+        }
+        #explanation-container {
+            background-color: var(--input-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            border: 1px solid var(--border-color);
+        }
+        #explanation-container h3 {
+            color: var(--primary-blue);
+            margin-bottom: 0.75rem;
+        }
+        #explanation-container p {
+            color: var(--secondary-text-color);
+            line-height: 1.7;
+        }
+        #results-container h2 {
+            font-size: 1.5rem;
+            color: var(--primary-blue);
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        .card-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            justify-content: center;
+        }
+        .card-row .card {
+            min-width: 250px;
+            text-decoration: none;
+            color: var(--text-color);
+        }
+        .card-row .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px var(--shadow-color);
+        }
+        .card-row .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px 8px 0 0;
+        }
+        .card-row .card h3 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            padding: 1rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body data-theme="dark">
+    <header>
+        <div class="logo">
+            <h1>PhysioGuardian</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="clinic-locator.html">Clinic Locator</a></li>
+                <li><a href="fee-predictor.html">Fee Predictor</a></li>
+                <li><a href="chat.html">Emergency Chat</a></li>
+                <li><a href="index.html#about-us">About Us</a></li>
+            </ul>
+        </nav>
+        <div class="header-right">
+            <div id="auth-links" style="display: flex; align-items: center; gap: 1rem;"></div>
+            <div class="user-profile">G</div>
+            <button id="theme-toggle" aria-label="Toggle light and dark mode">
+                <i class="fas fa-sun sun-icon"></i>
+                <i class="fas fa-moon moon-icon"></i>
+            </button>
+        </div>
+    </header>
+
+    <main class="ai-routine-main">
+        <div class="generator-container">
+            <h1>Smart Routine Generator</h1>
+            <p class="tagline">Describe your pain or discomfort below, and our system will suggest a personalized exercise routine to help you on your path to recovery.</p>
+            
+            <textarea id="problem-description" placeholder="For example: 'I have a stiff neck and shoulder from sitting all day' or 'My lower back hurts'"></textarea>
+            
+            <button id="generate-btn" class="primary-btn action-btn">Generate My Routine</button>
+
+            <div id="results-container">
+                </div>
+        </div>
+    </main>
+    
+    <script src="script.js"></script>
+    <script src="ai-routine.js"></script>
+    <script src="main-auth.js" type="module"></script>
+</body>
+</html>
