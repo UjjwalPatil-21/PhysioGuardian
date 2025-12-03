@@ -5,7 +5,7 @@ PhysioGuardian is a lightweight and user-friendly physiotherapy assistant that h
 
 ---
 
-## 🌟 Why I Built This  
+## Why I Built This  
 Most people don’t know which exercises match their pain. PhysioGuardian solves this by offering simple routines, guided exercise videos, a friendly assistant (Elara), and even nearby clinic suggestions. My goal was to create something that feels human and genuinely helpful.
 
 ---
@@ -32,11 +32,11 @@ Most people don’t know which exercises match their pain. PhysioGuardian solves
 
 ---
 
-## 🌍 Live Demo  
+##  Live Demo  
 🔗 https://physioguardian.netlify.app/
 
 ---
 
-## ❤️ Overall 
+##  Overall 
 **A friendly digital physio that listens to you, understands your pain, and guides you toward recovery.**
 
